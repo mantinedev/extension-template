@@ -4,7 +4,10 @@ import signale from "signale";
 import { argv } from "yargs";
 import { execa } from "execa";
 import chalk from "chalk";
+import open from "open";
+import githubRelease from "new-github-release-url";
 import { updateVersion } from "./update-version";
+import settings from "../settings";
 
 const git = simpleGit();
 
@@ -35,6 +38,19 @@ async function release() {
     process.stdout.write(chalk.red`${error.message}\n`);
     process.exit(1);
   }
+
+  await git.add(path.join(__dirname, "../package.json"));
+  await git.commit(`[release] Version: ${version}`);
+  await git.push();
+
+  open(
+    githubRelease({
+      user: settings.githubUsername,
+      repo: settings.githubRepo,
+      tag: version,
+      title: version,
+    })
+  );
 }
 
 release();
