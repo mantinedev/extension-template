@@ -1,1 +1,1 @@
-export { TestComponent } from "./Test";
+export { TestComponent } from './Test';
