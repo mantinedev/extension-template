@@ -10,6 +10,9 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "prettier:test": "prettier --check \"**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "build:dts": "tsc && rimraf temp",
     "build": "rollup --config .config/rollup.config.js",
     "release": "npm run build && esno scripts/release"
@@ -65,6 +68,7 @@
     "fs-extra": "^10.1.0",
     "new-github-release-url": "^2.0.0",
     "open": "^8.4.0",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
