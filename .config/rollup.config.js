@@ -1,5 +1,4 @@
 import path from "node:path";
-import fs from "node:fs";
 import commonjs from "@rollup/plugin-commonjs";
 import nodeExternals from "rollup-plugin-node-externals";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
@@ -7,14 +6,9 @@ import esbuild from "rollup-plugin-esbuild";
 import json from "@rollup/plugin-json";
 import replace from "@rollup/plugin-replace";
 
-const { name } = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "../package.json"), "utf-8")
-);
-
 export default {
   input: path.join(__dirname, "../src/index.ts"),
   output: {
-    name,
     format: "esm",
     externalLiveBindings: false,
     preserveModules: true,

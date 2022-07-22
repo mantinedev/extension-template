@@ -10,6 +10,7 @@
     "outDir": "temp",
     "declaration": true,
     "declarationMap": true,
+    "resolveJsonModule": true,
     "declarationDir": "declarations",
     "allowSyntheticDefaultImports": true
   }
