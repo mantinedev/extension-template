@@ -5,11 +5,12 @@
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "skipLibCheck": true,
     "outDir": "temp",
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "declarations"
+    "declarationDir": "declarations",
+    "allowSyntheticDefaultImports": true
   }
 }

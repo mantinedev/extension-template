@@ -1,14 +1,14 @@
 {
   "name": "mantine-extension-template",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "Template for Mantine extensions",
-  "main": "dist/index.js",
-  "types": "declarations/index.d.ts",
+  "types": "./declarations/index.d.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build:dts": "tsc && rimraf temp",
     "build": "rollup --config .config/rollup.config.js",
-    "publish": "npm run build && yarn publish"
+    "release": "npm run build && yarn publish"
   },
   "repository": {
     "type": "git",
