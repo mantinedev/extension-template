@@ -6,6 +6,10 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "jsx": "preserve",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "temp",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "declarations"
   }
 }
