@@ -12,6 +12,7 @@
     "declarationMap": true,
     "resolveJsonModule": true,
     "declarationDir": "declarations",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   }
 }

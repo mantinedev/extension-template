@@ -1,5 +1,5 @@
 import React from 'react';
 
 export function TestComponent() {
-  return <div>Test component</div>;
+  return <div>test-component</div>;
 }
