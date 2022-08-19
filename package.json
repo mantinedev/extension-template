@@ -36,15 +36,15 @@
   "homepage": "https://github.com/rtivital/mantine-extension-template#readme",
   "peerDependencies": {
     "@emotion/react": ">=11.9.0",
-    "@mantine/core": ">=5.0.0-alpha.22",
-    "@mantine/hooks": ">=5.0.0-alpha.22"
+    "@mantine/core": ">=5.0.0",
+    "@mantine/hooks": ">=5.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@emotion/react": "^11.9.3",
-    "@mantine/core": "^5.0.0-alpha.22",
-    "@mantine/hooks": "^5.0.0-alpha.22",
+    "@mantine/core": "^5.2.0",
+    "@mantine/hooks": "^5.2.0",
     "@rollup/plugin-alias": "^3.1.2",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
