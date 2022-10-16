@@ -9,6 +9,9 @@
     "default": "./dist/index.js"
   },
   "scripts": {
+    "docs": "cd docs && npm start",
+    "docs:build": "cd docs && npm run build",
+    "docs:serve": "cd docs && npm run serve",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --cache",
     "jest": "jest",
