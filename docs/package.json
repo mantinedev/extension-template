@@ -1,0 +1,42 @@
+{
+  "name": "mantine-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "mantine-extension",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@mantine/core": "^5.5.5",
+    "@mantine/ds": "^5.5.5",
+    "@mantine/hooks": "^5.5.5",
+    "@mantine/prism": "^5.5.5",
+    "@mantine/ssr": "^5.5.5",
+    "@mdx-js/react": "^2.1.5",
+    "gatsby": "^4.24.4",
+    "gatsby-plugin-mantine": "^5.0.0",
+    "gatsby-plugin-mdx": "^4.3.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "gatsby-plugin-layout": "^3.24.0",
+    "gatsby-plugin-tsconfig-paths": "^1.0.5",
+    "typescript": "^4.8.4"
+  }
+}
