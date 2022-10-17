@@ -4,5 +4,5 @@ import { TestComponent } from './TestComponent';
 export default { title: 'TestComponent' };
 
 export function Usage() {
-  return <TestComponent />;
+  return <TestComponent color="red">Test component</TestComponent>;
 }
