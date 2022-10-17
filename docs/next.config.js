@@ -14,5 +14,8 @@ module.exports = withMDX({
   experimental: {
     externalDir: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 });

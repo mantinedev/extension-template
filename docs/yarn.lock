@@ -242,6 +242,13 @@
     "@radix-ui/react-scroll-area" "1.0.0"
     react-textarea-autosize "8.3.4"
 
+"@mantine/ds@^5.5.5":
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/@mantine/ds/-/ds-5.5.5.tgz#3693fe5e6a90d8e0db61b4535c96d84dccb2b6ff"
+  integrity sha512-hDxfqTXggjefI5MBlW6Rpbadxu4M50sC+XrkDx9qqdoKtf5i0eJBimxLlWeb35nX2RuTI2RUtbNrPuhvn1qZwA==
+  dependencies:
+    "@mantine/utils" "5.5.5"
+
 "@mantine/hooks@^5.5.5":
   version "5.5.5"
   resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-5.5.5.tgz#cffe0080d940e951d69a1496d4a4b8484163711e"
@@ -254,6 +261,14 @@
   dependencies:
     "@mantine/ssr" "5.5.5"
     "@mantine/styles" "5.5.5"
+
+"@mantine/prism@^5.5.5":
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/@mantine/prism/-/prism-5.5.5.tgz#310a084d6efefb2543d768fd1b95a55fff663e4d"
+  integrity sha512-MH04InQOeRHRV3W1CQbMac8gtG+7/L95vxkf6hVgCl5RkK4dSXI/5OH1Sr1l1hWoAni03BwaaC5WCq3dHNvnVg==
+  dependencies:
+    "@mantine/utils" "5.5.5"
+    prism-react-renderer "^1.2.1"
 
 "@mantine/ssr@5.5.5":
   version "5.5.5"
@@ -2687,6 +2702,11 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prism-react-renderer@^1.2.1:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.3.5.tgz#786bb69aa6f73c32ba1ee813fbe17a0115435085"
+  integrity sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
