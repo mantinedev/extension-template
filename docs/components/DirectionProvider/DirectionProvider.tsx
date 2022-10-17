@@ -1,4 +1,4 @@
-import { useContext, createContext } from 'react';
+import React, { useContext, createContext } from 'react';
 
 interface DirectionContextProps {
   dir: 'rtl' | 'ltr';

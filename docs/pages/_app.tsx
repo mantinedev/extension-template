@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import {
@@ -12,6 +12,7 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import { Shell } from '../components/Shell/Shell';
 import { MdxProvider } from '../components/MdxProvider/MdxProvider';
 import { DirectionProvider } from '../components/DirectionProvider/DirectionProvider';
+import { SETTINGS } from '../settings';
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -32,7 +33,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   return (
     <DirectionProvider dir={dir} toggleDirection={() => toggleDirection()}>
       <Head>
-        <title>Mantine Extension Template</title>
+        <title>{SETTINGS.pageTitle}</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>

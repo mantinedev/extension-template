@@ -1,3 +1,4 @@
+import React from 'react';
 import { Prism } from '@mantine/prism';
 
 export function MdxPrism(props: any) {

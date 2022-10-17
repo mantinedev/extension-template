@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppShell } from '@mantine/core';
 import { Header } from './Header';
 
@@ -6,5 +7,9 @@ interface ShellProps {
 }
 
 export function Shell({ children }: ShellProps) {
-  return <AppShell header={<Header />}>{children}</AppShell>;
+  return (
+    <AppShell header={<Header />} padding={0}>
+      {children}
+    </AppShell>
+  );
 }

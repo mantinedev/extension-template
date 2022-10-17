@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { Header as MantineHeader, Group, Tooltip, Container, Anchor } from '@mantine/core';
 import {
@@ -8,6 +9,7 @@ import {
   ColorSchemeControl,
 } from '@mantine/ds';
 import { useDirection } from '../DirectionProvider/DirectionProvider';
+import { SETTINGS } from '../../settings';
 
 export function Header() {
   const { dir, toggleDirection } = useDirection();
@@ -23,7 +25,7 @@ export function Header() {
           <Tooltip.Group openDelay={600} closeDelay={100}>
             <Group spacing="xs">
               <DiscordControl />
-              <GithubControl link="https://github.com/mantinedev/mantine" />
+              <GithubControl link={SETTINGS.repositoryUrl} />
               <DirectionControl direction={dir} toggleDirection={toggleDirection} />
               <ColorSchemeControl />
             </Group>
