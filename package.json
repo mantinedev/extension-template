@@ -1,6 +1,6 @@
 {
   "name": "mantine-extension-template",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Template for Mantine extensions",
   "types": "./declarations/index.d.ts",
   "main": "./dist/index.js",
