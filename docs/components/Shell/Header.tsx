@@ -9,7 +9,7 @@ import {
   ColorSchemeControl,
 } from '@mantine/ds';
 import { useDirection } from '../DirectionProvider/DirectionProvider';
-import { SETTINGS } from '../../settings';
+import SETTINGS from '../../../settings';
 
 export function Header() {
   const { dir, toggleDirection } = useDirection();

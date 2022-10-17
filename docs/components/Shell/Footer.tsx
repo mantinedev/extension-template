@@ -2,7 +2,7 @@ import React from 'react';
 import { Footer as MantineFooter, Container, Group, Anchor, Text } from '@mantine/core';
 import Link from 'next/link';
 import { MantineLogo } from '@mantine/ds';
-import { SETTINGS } from '../../settings';
+import SETTINGS from '../../../settings';
 
 export function Footer() {
   return (

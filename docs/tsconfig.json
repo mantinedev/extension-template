@@ -18,6 +18,6 @@
       "@/extension": ["../src"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../src/**/*"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../src/**/*", "../settings.ts"],
   "exclude": ["node_modules"]
 }

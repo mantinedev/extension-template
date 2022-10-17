@@ -12,7 +12,7 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import { Shell } from '../components/Shell/Shell';
 import { MdxProvider } from '../components/MdxProvider/MdxProvider';
 import { DirectionProvider } from '../components/DirectionProvider/DirectionProvider';
-import { SETTINGS } from '../settings';
+import SETTINGS from '../../settings';
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',

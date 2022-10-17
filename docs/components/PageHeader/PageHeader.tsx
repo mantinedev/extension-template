@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Title, Text } from '@mantine/core';
 import { NpmIcon, GithubIcon } from '@mantine/ds';
 import { IconLicense, IconCode } from '@tabler/icons';
-import { SETTINGS } from '../../settings';
+import SETTINGS from '../../../settings';
 import { LinkItem } from './LinkItem/LinkItem';
 import useStyles from './PageHeader.styles';
 
