@@ -8,4 +8,6 @@ export const SETTINGS = {
   contributeLink: 'https://github.com/mantinedev/mantine/blob/master/CONTRIBUTING.md',
   license: 'MIT',
   pageTitle: 'Mantine extension template',
+  author: 'Vitaly Rtishchev',
+  authorUrl: 'https://github.com/rtivital',
 };
