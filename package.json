@@ -9,7 +9,7 @@
     "default": "./dist/index.js"
   },
   "scripts": {
-    "docs": "cd docs && npm start",
+    "docs": "cd docs && npm run dev",
     "docs:build": "cd docs && npm run build",
     "docs:serve": "cd docs && npm run serve",
     "typecheck": "tsc --noEmit",

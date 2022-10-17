@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
+import { MdxProvider } from '../components/MdxProvider/MdxProvider';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -22,7 +23,9 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
-          <Component {...pageProps} />
+          <MdxProvider>
+            <Component {...pageProps} />
+          </MdxProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>
