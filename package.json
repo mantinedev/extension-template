@@ -9,8 +9,10 @@
     "default": "./dist/index.js"
   },
   "scripts": {
+    "prepare": "npm run docgen && cd docs && yarn",
     "docgen": "esno scripts/docgen/docgen",
     "docs": "cd docs && npm run dev",
+    "dev": "npm run docs",
     "docs:build": "cd docs && npm run build",
     "docs:serve": "cd docs && npm run serve",
     "typecheck": "tsc --noEmit",
