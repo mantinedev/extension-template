@@ -2,6 +2,7 @@ import React from 'react';
 import { MantineColor, useMantineTheme } from '@mantine/core';
 
 export interface TestComponentProps {
+  /** Key of theme.colors */
   color: MantineColor;
   children?: React.ReactNode;
 }
