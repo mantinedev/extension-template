@@ -11,11 +11,12 @@
   "scripts": {
     "prepare": "npm run docgen && cd docs && yarn",
     "docgen": "esno scripts/docgen/docgen",
+    "nojekyll": "esno scripts/nojekyll",
     "docs": "cd docs && npm run dev",
     "dev": "npm run docs",
     "docs:build": "cd docs && npm run build",
     "docs:serve": "cd docs && npm run serve",
-    "docs:deploy": "npm run docs:build && gh-pages -d docs/out",
+    "docs:deploy": "npm run docs:build && npm run nojekyll && gh-pages -d docs/out -t true",
     "typecheck": "tsc --noEmit",
     "typecheck:docs": "cd docs && npm run typecheck",
     "lint": "eslint src --cache",
