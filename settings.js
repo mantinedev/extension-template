@@ -14,4 +14,7 @@ module.exports = {
 
   // Url of your website
   authorUrl: 'https://github.com/rtivital',
+
+  // Paths to components for which props documentation should be generated
+  docgenPaths: ['./src/TestComponent/TestComponent.tsx'],
 };

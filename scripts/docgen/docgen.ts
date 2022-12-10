@@ -1,12 +1,10 @@
 import path from 'path';
 import fs from 'fs-extra';
 import { generateDeclarations } from './generate-declarations';
+import settings from '../../settings';
 
-// Paths for components that require props information extraction
-const PATHS = ['../../src/TestComponent/TestComponent.tsx'].map((filePath) =>
-  path.join(__dirname, filePath)
-);
+const paths = settings.docgenPaths.map((filePath) => path.join(__dirname, '../../', filePath));
 
-fs.writeJSONSync(path.join(__dirname, '../../docs/docgen.json'), generateDeclarations(PATHS), {
+fs.writeJSONSync(path.join(__dirname, '../../docs/docgen.json'), generateDeclarations(paths), {
   spaces: 2,
 });
