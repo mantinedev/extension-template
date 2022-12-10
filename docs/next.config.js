@@ -1,4 +1,5 @@
 const remarkSlug = require('remark-slug');
+const settings = require('../settings');
 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
@@ -11,7 +12,7 @@ const withMDX = require('@next/mdx')({
 module.exports = withMDX({
   reactStrictMode: false,
   swcMinify: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/mantine-extension-template' : undefined,
+  basePath: process.env.NODE_ENV === 'production' ? `/${settings.githubRepo}` : undefined,
   eslint: {
     ignoreDuringBuilds: true,
   },

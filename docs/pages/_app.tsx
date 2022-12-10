@@ -12,7 +12,7 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import { Shell } from '../components/Shell/Shell';
 import { MdxProvider } from '../components/MdxProvider/MdxProvider';
 import { DirectionProvider } from '../components/DirectionProvider/DirectionProvider';
-import SETTINGS from '../../settings';
+import packageJson from '../../package.json';
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -33,7 +33,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   return (
     <DirectionProvider dir={dir} toggleDirection={() => toggleDirection()}>
       <Head>
-        <title>{SETTINGS.pageTitle}</title>
+        <title>{packageJson.name}</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
