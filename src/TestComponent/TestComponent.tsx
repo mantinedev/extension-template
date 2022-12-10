@@ -13,7 +13,7 @@ export function TestComponent({ color, children }: TestComponentProps) {
     <div
       style={{
         backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        color: theme.white,
+        color: theme.colors[color][6],
       }}
     >
       {children}

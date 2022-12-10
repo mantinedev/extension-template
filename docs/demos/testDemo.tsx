@@ -19,7 +19,7 @@ function Demo() {
   return (
     <div>
       <div>Test component Demo:</div>
-      <TestComponent color="orange">Test component</TestComponent>
+      <TestComponent color="cyan">Test component</TestComponent>
     </div>
   );
 }
