@@ -6,8 +6,8 @@
     "dev": "next dev --port 8732",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "serve": "npm run build && npm start"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -33,16 +33,6 @@
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
-    "eslint": "^8.18.0",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-mantine": "2.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.6.0",
-    "eslint-plugin-jsx-a11y": "^6.6.0",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.5.1",
     "typescript": "4.8.4"
   }
 }
