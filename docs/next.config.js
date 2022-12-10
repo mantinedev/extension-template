@@ -12,9 +12,6 @@ module.exports = withMDX({
   reactStrictMode: false,
   swcMinify: true,
   basePath: process.env.NODE_ENV === 'production' ? '/mantine-extension-template' : undefined,
-  experimental: {
-    externalDir: true,
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },

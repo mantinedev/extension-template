@@ -1,6 +1,6 @@
 import React from 'react';
 import { MantineDemo } from '@mantine/ds';
-import { TestComponent, TestComponentProps } from '@/extension';
+import { TestComponent, TestComponentProps } from 'mantine-extension-template';
 
 function Wrapper(props: Partial<TestComponentProps>) {
   return <TestComponent color="blue" {...props} />;

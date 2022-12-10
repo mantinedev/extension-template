@@ -11,7 +11,10 @@ export function TestComponent({ color, children }: TestComponentProps) {
   const theme = useMantineTheme();
   return (
     <div
-      style={{ backgroundColor: theme.colors[color][theme.fn.primaryShade()], color: theme.white }}
+      style={{
+        backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.white,
+      }}
     >
       {children}
     </div>

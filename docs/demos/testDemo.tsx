@@ -1,6 +1,6 @@
 import React from 'react';
 import { MantineDemo } from '@mantine/ds';
-import { TestComponent } from '@/extension';
+import { TestComponent } from 'mantine-extension-template';
 
 const code = `
 import { TestComponent } from 'mantine-extension-template';

@@ -2057,6 +2057,9 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+"mantine-extension-template@file:.yalc/mantine-extension-template":
+  version "0.0.8"
+
 markdown-extensions@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-extensions/-/markdown-extensions-1.1.1.tgz#fea03b539faeaee9b4ef02a3769b455b189f7fc3"
