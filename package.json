@@ -1,0 +1,37 @@
+{
+  "name": "mantine-extension-template",
+  "description": "A template for Mantine extensions",
+  "packageManager": "yarn@4.0.0",
+  "version": "0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtivital/mantine-extension-template.git"
+  },
+  "keywords": [
+    "mantine",
+    "extension"
+  ],
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rtivital/mantine-extension-template/issues"
+  },
+  "homepage": "https://github.com/rtivital/mantine-extension-template#readme",
+  "peerDependencies": {
+    "@mantine/core": ">=7.0.0",
+    "@mantine/hooks": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-mantine": "^3.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.2.2"
+  }
+}
