@@ -1,0 +1,8 @@
+.root {
+  background-color: light-dark(pink, cyan);
+  font-size: rem(16px);
+
+  @mixin hover {
+    background-color: orange;
+  }
+}

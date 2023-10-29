@@ -1,5 +1,5 @@
 {
-  "include": ["src", "scripts"],
+  "include": ["package", "scripts", "@types"],
   "compilerOptions": {
     "types": ["node", "jest", "@testing-library/jest-dom"],
     "target": "ES2015",
