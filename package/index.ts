@@ -1,1 +1,2 @@
-console.log('Hello World!');
+export { TestComponent } from './TestComponent';
+export type { TestComponentProps } from './TestComponent';

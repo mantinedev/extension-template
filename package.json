@@ -1,7 +1,7 @@
 {
   "name": "mantine-extension-template",
   "description": "A template for Mantine extensions",
-  "packageManager": "yarn@4.0.0",
+  "packageManager": "yarn@4.0.1",
   "version": "0.10.0",
   "repository": {
     "type": "git",
