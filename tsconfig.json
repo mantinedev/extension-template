@@ -1,5 +1,5 @@
 {
-  "include": ["package"],
+  "include": ["src", "scripts"],
   "compilerOptions": {
     "target": "ES2015",
     "lib": ["DOM", "ESNext"],
@@ -9,11 +9,10 @@
     "skipLibCheck": true,
     "outDir": "temp",
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "resolveJsonModule": true,
-    "declarationDir": "declarations",
+    "declarationDir": "dist/types",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "importHelpers": true
+    "esModuleInterop": true
   }
 }
