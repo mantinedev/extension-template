@@ -17,10 +17,26 @@
     "url": "https://github.com/rtivital/mantine-extension-template/issues"
   },
   "homepage": "https://github.com/rtivital/mantine-extension-template#readme",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "module": "./dist/esm/index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.mts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./styles.css": "./dist/styles.css",
+    "./styles.layer.css": "./dist/styles.layer.css"
+  },
   "scripts": {
     "clean": "rimraf dist",
-    "generate-dts": "esno scripts/generate-dts",
-    "build": "rollup -c rollup.config.mjs && npm run generate-dts",
+    "build": "rollup -c rollup.config.mjs && esno scripts/generate-dts && esno scripts/prepare-css",
     "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",

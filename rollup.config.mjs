@@ -8,11 +8,25 @@ import postcss from 'rollup-plugin-postcss';
 import banner from 'rollup-plugin-banner2';
 import { createGenerateScopedName } from 'hash-css-selector';
 
+const outputDir = path.join(process.cwd(), './dist');
+
 export default {
   input: path.join(process.cwd(), './package/index.ts'),
   output: [
-    { format: 'es', file: './dist/esm/index.mjs' },
-    { format: 'cjs', file: './dist/cjs/index.js' },
+    {
+      format: 'es',
+      entryFileNames: '[name].mjs',
+      dir: path.join(outputDir, 'esm'),
+      preserveModules: true,
+      sourcemap: true,
+    },
+    {
+      format: 'cjs',
+      entryFileNames: '[name].js',
+      dir: path.join(outputDir, 'cjs'),
+      preserveModules: true,
+      sourcemap: true,
+    },
   ],
   plugins: [
     commonjs(),
