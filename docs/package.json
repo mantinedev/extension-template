@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mantine/code-highlight": "^7.1.7",
     "@mantine/core": "7.1.7",
     "@mantine/ds": "^7.1.7",
     "@mantine/hooks": "7.1.7",
+    "@tabler/icons-react": "^2.40.0",
     "mantine-extension-template": "../package",
     "next": "13.4.4",
     "react": "18.2.0",

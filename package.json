@@ -7,20 +7,6 @@
     "docs",
     "package"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rtivital/mantine-extension-template.git"
-  },
-  "keywords": [
-    "mantine",
-    "extension"
-  ],
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rtivital/mantine-extension-template/issues"
-  },
-  "homepage": "https://github.com/rtivital/mantine-extension-template#readme",
   "scripts": {
     "clean": "rimraf package/dist",
     "build": "rollup -c rollup.config.mjs && esno scripts/generate-dts && esno scripts/prepare-css",
@@ -91,9 +77,5 @@
     "typescript": "^5.2.2",
     "version-next": "^1.0.2",
     "yargs": "^17.7.2"
-  },
-  "dependencies": {
-    "@mantine/code-highlight": "^7.1.7",
-    "@tabler/icons-react": "^2.40.0"
   }
 }
