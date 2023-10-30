@@ -6244,16 +6244,27 @@ __metadata:
   linkType: hard
 
 "mantine-extension-template@file:../package::locator=mantine-minimal-next-template%40workspace%3Adocs":
-  version: 0.10.0
-  resolution: "mantine-extension-template@file:../package#../package::hash=ddbb0a&locator=mantine-minimal-next-template%40workspace%3Adocs"
+  version: 0.1.1
+  resolution: "mantine-extension-template@file:../package#../package::hash=2f0232&locator=mantine-minimal-next-template%40workspace%3Adocs"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 30bf30944a64119e91a4eea6b90ddaed475003adfd4c7528b9daf95f601cd98a4f63a6f19adc95111b7b09760b85af9f935f9f96f9de7dc506536bac479d0c00
+  checksum: e8bfd7399c2a4c5804c15a0f846926da7b2b76b317c76124af893d3fd07acca5ac9a62bc585a8d8056aebb5024b534d835b0eb21c4387ab8d8427459bd2df6b4
   languageName: node
   linkType: hard
+
+"mantine-extension-template@workspace:package":
+  version: 0.0.0-use.local
+  resolution: "mantine-extension-template@workspace:package"
+  peerDependencies:
+    "@mantine/core": ">=7.0.0"
+    "@mantine/hooks": ">=7.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  languageName: unknown
+  linkType: soft
 
 "mantine-minimal-next-template@workspace:docs":
   version: 0.0.0-use.local

@@ -17,7 +17,7 @@ function getRepositoryInfo(gitUrl: string) {
   return { user, repo };
 }
 
-const packageJsonPath = path.join(process.cwd(), 'package.json');
+const packageJsonPath = path.join(process.cwd(), 'package/package.json');
 const packageJson = fs.readJsonSync(packageJsonPath);
 const { argv } = yargs(hideBin(process.argv)) as any;
 const git = SimpleGit();
@@ -77,17 +77,12 @@ async function release() {
 
   const revertVersion = await updateVersion(nextVersion);
 
-  await execa('cd', ['./package']);
-
   await run(
-    execa('yarn', [
-      'npm',
-      'publish',
-      '--access',
-      'public',
-      '--tag',
-      versionStage ? 'next' : 'latest',
-    ]),
+    execa(
+      'yarn',
+      ['npm', 'publish', '--access', 'public', '--tag', versionStage ? 'next' : 'latest'],
+      { cwd: path.join(process.cwd(), 'package') }
+    ),
     {
       info: 'Publishing the package to npm',
       success: 'The package has been published to npm',
@@ -95,8 +90,6 @@ async function release() {
     },
     revertVersion
   );
-
-  await execa('cd', ['..']);
 
   await git.add([packageJsonPath]);
   await git.commit(`Release ${nextVersion}`);

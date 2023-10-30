@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'fs-extra';
 
 export async function updateVersion(version: string) {
-  const packageJsonPath = path.join(process.cwd(), 'package.json');
+  const packageJsonPath = path.join(process.cwd(), 'package/package.json');
   const originalPackageJson = await fs.readJson(packageJsonPath);
 
   const updatedPackageJson = { ...originalPackageJson };
