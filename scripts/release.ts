@@ -75,6 +75,16 @@ async function release() {
     error: 'Failed to build the package',
   });
 
+  await fs.copyFile(
+    path.join(process.cwd(), 'README.md'),
+    path.join(process.cwd(), 'package/README.md')
+  );
+
+  await fs.copyFile(
+    path.join(process.cwd(), 'LICENSE'),
+    path.join(process.cwd(), 'package/LICENSE')
+  );
+
   const revertVersion = await updateVersion(nextVersion);
 
   await run(
