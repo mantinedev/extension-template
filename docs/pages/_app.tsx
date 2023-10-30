@@ -3,7 +3,7 @@ import '@mantine/code-highlight/styles.css';
 import '@mantine/ds/styles.css';
 import React from 'react';
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, Container } from '@mantine/core';
 import { PageHeader } from '../components/PageHeader';
 import { Shell } from '../components/Shell';
 import { theme } from '../theme';
@@ -23,7 +23,9 @@ export default function App({ Component, pageProps }: any) {
       </Head>
       <Shell>
         <PageHeader data={PACKAGE_DATA} />
-        <Component {...pageProps} />
+        <Container size="md">
+          <Component {...pageProps} />
+        </Container>
       </Shell>
     </MantineProvider>
   );

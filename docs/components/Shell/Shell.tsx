@@ -13,7 +13,7 @@ export function Shell({ children }: ShellProps) {
   return (
     <AppShell header={{ height: 60 }}>
       <AppShell.Header className={RemoveScroll.classNames.zeroRight}>
-        <Container size="xl" px="md" className={classes.inner}>
+        <Container size="md" px="md" className={classes.inner}>
           <a
             href="https://mantine.dev/"
             target="_blank"

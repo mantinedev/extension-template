@@ -11,8 +11,17 @@ export interface PackageData {
   /** Link to the repository on GitHub, used in header github icon and in "View source code button" */
   repositoryUrl: string;
 
-  /** Code to import the component, displayed in documentation header */
-  importCode?: string;
+  /** Link to the license file */
+  licenseUrl?: string;
+
+  /** Information about the author of the package */
+  author: {
+    /** Package author name, for example, `John Doe` */
+    name: string;
+
+    /** Author GitHub username, for example, `rtivital` */
+    githubUsername: string;
+  };
 }
 
 export const PACKAGE_DATA: PackageData = {
@@ -22,5 +31,9 @@ export const PACKAGE_DATA: PackageData = {
   mdxFileUrl:
     'https://github.com/rtivital/mantine-extension-template/blob/master/docs/pages/index.mdx',
   repositoryUrl: 'https://github.com/rtivital/mantine-extension-template',
-  importCode: "import { TestComponent } from 'mantine-extension-template';",
+  licenseUrl: 'https://github.com/rtivital/mantine-extension-template/blob/master/LICENSE',
+  author: {
+    name: 'Vitaly Rtishchev',
+    githubUsername: 'rtivital',
+  },
 };
