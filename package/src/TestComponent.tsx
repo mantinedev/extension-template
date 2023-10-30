@@ -9,7 +9,7 @@ export interface TestComponentProps extends BoxProps, ElementProps<'div'> {
 export function TestComponent({ label, ...others }: TestComponentProps) {
   return (
     <Box className={classes.root} {...others}>
-      TestComponent
+      {label}
     </Box>
   );
 }

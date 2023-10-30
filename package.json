@@ -19,7 +19,8 @@
     "release": "esno scripts/release && npm run docs:deploy",
     "dev": "cd docs && npm run dev",
     "docs:build": "cd docs && npm run build",
-    "docs:deploy": "npm run docs:build && esno scripts/nojekyll && gh-pages -d docs/out -t true"
+    "docs:deploy": "npm run docs:build && esno scripts/nojekyll && gh-pages -d docs/out -t true",
+    "storybook": "storybook dev -p 8271"
   },
   "devDependencies": {
     "@mantine/core": "^7.1.7",
@@ -27,6 +28,10 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.4",
+    "@storybook/addon-essentials": "^7.5.2",
+    "@storybook/blocks": "^7.5.2",
+    "@storybook/react": "^7.5.2",
+    "@storybook/react-vite": "^7.5.2",
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
@@ -41,6 +46,7 @@
     "@types/yargs": "^17.0.29",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "@vitejs/plugin-react": "^4.1.0",
     "esbuild": "^0.19.5",
     "eslint": "^8.52.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -73,9 +79,12 @@
     "rollup-plugin-postcss": "^4.0.2",
     "signale": "^1.4.0",
     "simple-git": "^3.20.0",
+    "storybook": "^7.5.2",
+    "storybook-dark-mode": "^3.0.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2",
     "version-next": "^1.0.2",
+    "vite": "^4.5.0",
     "yargs": "^17.7.2"
   }
 }
