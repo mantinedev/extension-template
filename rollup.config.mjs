@@ -8,10 +8,10 @@ import postcss from 'rollup-plugin-postcss';
 import banner from 'rollup-plugin-banner2';
 import { createGenerateScopedName } from 'hash-css-selector';
 
-const outputDir = path.join(process.cwd(), './dist');
+const outputDir = path.join(process.cwd(), './package/dist');
 
 export default {
-  input: path.join(process.cwd(), './package/index.ts'),
+  input: path.join(process.cwd(), './package/src/index.ts'),
   output: [
     {
       format: 'es',
@@ -30,7 +30,9 @@ export default {
   ],
   plugins: [
     commonjs(),
-    nodeExternals(),
+    nodeExternals({
+      packagePath: path.join(process.cwd(), 'package/package.json'),
+    }),
     nodeResolve({ extensions: ['.ts', '.tsx', '.js', '.jsx'] }),
     esbuild({
       sourceMap: false,

@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'fs-extra';
 import signale from 'signale';
 
-const rollupCssFilePath = path.join(process.cwd(), './dist/esm/index.css');
+const rollupCssFilePath = path.join(process.cwd(), './package/dist/esm/index.css');
 
 if (!fs.existsSync(rollupCssFilePath)) {
   signale.error('CSS file not found. Please run `yarn build` first.');
@@ -11,11 +11,11 @@ if (!fs.existsSync(rollupCssFilePath)) {
 
 const content = fs.readFileSync(rollupCssFilePath, 'utf-8');
 
-fs.writeFileSync(path.join(process.cwd(), './dist/styles.css'), content);
+fs.writeFileSync(path.join(process.cwd(), './package/dist/styles.css'), content);
 fs.writeFileSync(
-  path.join(process.cwd(), './dist/styles.layer.css'),
+  path.join(process.cwd(), './package/dist/styles.layer.css'),
   `@layer mantine {${content}}`
 );
 
 fs.removeSync(rollupCssFilePath);
-fs.removeSync(path.join(process.cwd(), './dist/cjs/index.css'));
+fs.removeSync(path.join(process.cwd(), './package/dist/cjs/index.css'));

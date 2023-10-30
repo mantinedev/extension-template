@@ -12,7 +12,7 @@
     "declaration": true,
     "declarationMap": false,
     "resolveJsonModule": true,
-    "declarationDir": "dist/types",
+    "declarationDir": "package/dist/types",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   }
