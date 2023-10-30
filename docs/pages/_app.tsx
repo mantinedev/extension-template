@@ -1,4 +1,5 @@
 import '@mantine/core/styles.css';
+import React from 'react';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { theme } from '../theme';

@@ -77,11 +77,12 @@ async function release() {
 
   const revertVersion = await updateVersion(nextVersion);
 
+  await execa('cd', ['./package']);
+
   await run(
     execa('yarn', [
       'npm',
       'publish',
-      './package',
       '--access',
       'public',
       '--tag',
@@ -94,6 +95,8 @@ async function release() {
     },
     revertVersion
   );
+
+  await execa('cd', ['..']);
 
   await git.add([packageJsonPath]);
   await git.commit(`Release ${nextVersion}`);

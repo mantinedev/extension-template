@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Group } from '@mantine/core';
 import { TestComponent } from 'mantine-extension-template';
 import 'mantine-extension-template/styles.css';

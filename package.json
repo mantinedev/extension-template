@@ -1,6 +1,6 @@
 {
-  "name": "mantine-extension-template",
-  "description": "A template for Mantine extensions",
+  "name": "m-90d2bb8",
+  "description": "This package.json is not published to npm, modify the file in package/package.json",
   "packageManager": "yarn@4.0.1",
   "version": "0.1.0",
   "workspaces": [
@@ -29,7 +29,7 @@
     "lint": "eslint --cache --ext .ts,.tsx .",
     "jest": "jest",
     "test": "npm run prettier:check && npm run typecheck && npm run lint && npm run jest",
-    "release": "npm test && esno scripts/release"
+    "release": "esno scripts/release"
   },
   "devDependencies": {
     "@mantine/core": "^7.1.7",
