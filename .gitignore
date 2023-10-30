@@ -141,3 +141,5 @@ package/dist
 package/node_modules
 package/LICENSE
 package/README.md
+
+docs/next-env.d.ts
