@@ -81,6 +81,7 @@ async function release() {
     execa('yarn', [
       'npm',
       'publish',
+      './package',
       '--access',
       'public',
       '--tag',
