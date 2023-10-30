@@ -16,7 +16,7 @@
     "lint": "eslint --cache --ext .ts,.tsx .",
     "jest": "jest",
     "test": "npm run prettier:check && npm run typecheck && npm run lint && npm run jest",
-    "release": "esno scripts/release",
+    "release": "esno scripts/release && npm run docs:deploy",
     "dev": "cd docs && npm run dev",
     "docs:build": "cd docs && npm run build",
     "docs:deploy": "npm run docs:build && esno scripts/nojekyll && gh-pages -d docs/out -t true"
