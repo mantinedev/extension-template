@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { Shell } from '../components/Shell';
 import { theme } from '../theme';
+import favicon from '../assets/favicon.svg';
 
 export default function App({ Component, pageProps }: any) {
   return (
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }: any) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href={favicon.src} />
       </Head>
       <Shell>
         <Component {...pageProps} />
