@@ -1,7 +1,8 @@
 import React from 'react';
 import cx from 'clsx';
 import { AppShell, Container, RemoveScroll, Group } from '@mantine/core';
-import { ColorSchemeControl, HeaderControls, MantineLogo, meta } from '@mantine/ds';
+import { ColorSchemeControl, HeaderControls, MantineLogo } from '@mantine/ds';
+import { PACKAGE_DATA } from '../../data';
 import classes from './Shell.module.css';
 
 interface ShellProps {
@@ -25,7 +26,7 @@ export function Shell({ children }: ShellProps) {
           <HeaderControls
             visibleFrom="sm"
             onSearch={() => {}}
-            githubLink={meta.gitHubLinks.mantineUi}
+            githubLink={PACKAGE_DATA.repositoryUrl}
             withDirectionToggle={false}
           />
 
