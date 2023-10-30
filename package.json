@@ -2,7 +2,7 @@
   "name": "mantine-extension-template",
   "description": "A template for Mantine extensions",
   "packageManager": "yarn@4.0.1",
-  "version": "0.10.0",
+  "version": "0.1.0",
   "workspaces": [
     "docs"
   ],
