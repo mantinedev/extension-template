@@ -6244,14 +6244,14 @@ __metadata:
   linkType: hard
 
 "mantine-extension-template@file:../package::locator=mantine-minimal-next-template%40workspace%3Adocs":
-  version: 0.1.1
-  resolution: "mantine-extension-template@file:../package#../package::hash=2f0232&locator=mantine-minimal-next-template%40workspace%3Adocs"
+  version: 0.1.2
+  resolution: "mantine-extension-template@file:../package#../package::hash=d7149d&locator=mantine-minimal-next-template%40workspace%3Adocs"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: e8bfd7399c2a4c5804c15a0f846926da7b2b76b317c76124af893d3fd07acca5ac9a62bc585a8d8056aebb5024b534d835b0eb21c4387ab8d8427459bd2df6b4
+  checksum: 568796736a7f7471d46c73fb1c0d800539583cd8544bc9ec339d59a5ed5ff7ada7fdb7751e1aac4d9c2c323a5f5d5d7708acbb90a6adac0411162fd81dbf7a68
   languageName: node
   linkType: hard
 

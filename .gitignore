@@ -139,5 +139,4 @@ dist
 .DS_Store
 package/dist
 package/node_modules
-package/README.md
 package/LICENSE
