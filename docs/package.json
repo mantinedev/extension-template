@@ -12,11 +12,16 @@
     "@mantine/core": "7.1.7",
     "@mantine/ds": "^7.1.7",
     "@mantine/hooks": "7.1.7",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.0",
     "@tabler/icons-react": "^2.40.0",
+    "@types/mdx": "^2.0.9",
     "mantine-extension-template": "../package",
     "next": "13.4.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark-slug": "^7.0.1"
   },
   "devDependencies": {
     "@types/node": "20.2.5",

@@ -1,5 +1,13 @@
-const fs = require('fs-extra');
-const signale = require('signale');
+import fs from 'fs-extra';
+import signale from 'signale';
+import remarkSlug from 'remark-slug';
+import createMDX from '@next/mdx';
+
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [remarkSlug],
+  },
+});
 
 let repository;
 
@@ -22,4 +30,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default withMDX(nextConfig);
