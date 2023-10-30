@@ -4,5 +4,5 @@ import { TestComponent } from './TestComponent';
 
 it('renders without crashing', () => {
   render(<TestComponent label="test-label" />);
-  expect(screen.getByText('TestComponent')).toBeInTheDocument();
+  expect(screen.getByText('test-label')).toBeInTheDocument();
 });
