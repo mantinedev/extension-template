@@ -30,7 +30,8 @@
     "lint": "eslint --cache --ext .ts,.tsx .",
     "jest": "jest",
     "test": "npm run prettier:check && npm run typecheck && npm run lint && npm run jest",
-    "release": "esno scripts/release"
+    "release": "esno scripts/release",
+    "dev": "cd docs && npm run dev"
   },
   "devDependencies": {
     "@mantine/core": "^7.1.7",
@@ -87,5 +88,9 @@
     "typescript": "^5.2.2",
     "version-next": "^1.0.2",
     "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "@mantine/code-highlight": "^7.1.7",
+    "@tabler/icons-react": "^2.40.0"
   }
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mantine/core": "7.1.7",
+    "@mantine/ds": "^7.1.7",
     "@mantine/hooks": "7.1.7",
     "mantine-extension-template": "../package",
     "next": "13.4.4",

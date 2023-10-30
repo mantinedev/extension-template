@@ -1,7 +1,9 @@
 import '@mantine/core/styles.css';
+import '@mantine/ds/styles.css';
 import React from 'react';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
+import { Shell } from '../components/Shell';
 import { theme } from '../theme';
 
 export default function App({ Component, pageProps }: any) {
@@ -15,7 +17,9 @@ export default function App({ Component, pageProps }: any) {
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
-      <Component {...pageProps} />
+      <Shell>
+        <Component {...pageProps} />
+      </Shell>
     </MantineProvider>
   );
 }
