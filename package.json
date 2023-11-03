@@ -88,8 +88,5 @@
     "version-next": "^1.0.2",
     "vite": "^4.5.0",
     "yargs": "^17.7.2"
-  },
-  "dependencies": {
-    "type-fest": "^4.6.0"
   }
 }

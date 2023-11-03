@@ -21,7 +21,8 @@
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "remark-slug": "^7.0.1"
+    "remark-slug": "^7.0.1",
+    "type-fest": "^4.6.0"
   },
   "devDependencies": {
     "@types/node": "20.2.5",
