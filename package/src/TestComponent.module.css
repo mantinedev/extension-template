@@ -1,8 +1,7 @@
 .root {
-  background-color: light-dark(pink, cyan);
-  font-size: rem(16px);
-
-  @mixin hover {
-    background-color: orange;
-  }
+  background-color: var(--test-component-color);
+  color: var(--mantine-color-white);
+  padding: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+  font-weight: 500;
 }

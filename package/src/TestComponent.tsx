@@ -1,19 +1,76 @@
 import React from 'react';
-import { Box, BoxProps, ElementProps, MantineColor } from '@mantine/core';
+import {
+  Box,
+  BoxProps,
+  StylesApiProps,
+  factory,
+  ElementProps,
+  useProps,
+  useStyles,
+  createVarsResolver,
+  Factory,
+  MantineColor,
+  getThemeColor,
+} from '@mantine/core';
 import classes from './TestComponent.module.css';
 
-export interface TestComponentProps extends BoxProps, ElementProps<'div'> {
-  /** Label displayed inside the component, `'TestComponent'` by default */
-  label: React.ReactNode;
+export type TestComponentStylesNames = 'root';
+export type TestComponentVariant = string;
+export type TestComponentCssVariables = {
+  root: '--test-component-color';
+};
 
-  /** Key of `theme.colors` or any valid CSS color */
-  color: MantineColor;
+export interface TestComponentProps
+  extends BoxProps,
+    StylesApiProps<TestComponentFactory>,
+    ElementProps<'div'> {
+  /** Label displayed inside the component, `'Test component'` by default */
+  label?: React.ReactNode;
+
+  /** Controls `background-color` of the root element, key of `theme.colors` or any valid CSS color, `theme.primaryColor` by default */
+  color?: MantineColor;
 }
 
-export function TestComponent({ label, ...others }: TestComponentProps) {
+export type TestComponentFactory = Factory<{
+  props: TestComponentProps;
+  ref: HTMLDivElement;
+  stylesNames: TestComponentStylesNames;
+  vars: TestComponentCssVariables;
+  variant: TestComponentVariant;
+}>;
+
+const defaultProps: Partial<TestComponentProps> = {
+  label: 'Test component',
+};
+
+const varsResolver = createVarsResolver<TestComponentFactory>((theme, { color }) => ({
+  root: {
+    '--test-component-color': getThemeColor(color, theme),
+  },
+}));
+
+export const TestComponent = factory<TestComponentFactory>((_props, ref) => {
+  const props = useProps('TestComponent', defaultProps, _props);
+  const { classNames, className, style, styles, unstyled, vars, label, ...others } = props;
+
+  const getStyles = useStyles<TestComponentFactory>({
+    name: 'TestComponent',
+    classes,
+    props,
+    className,
+    style,
+    classNames,
+    styles,
+    unstyled,
+    vars,
+    varsResolver,
+  });
+
   return (
-    <Box className={classes.root} {...others}>
+    <Box ref={ref} {...getStyles('root')} {...others}>
       {label}
     </Box>
   );
-}
+});
+
+TestComponent.displayName = 'TestComponent';

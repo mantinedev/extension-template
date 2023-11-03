@@ -2,6 +2,7 @@ import React from 'react';
 import cx from 'clsx';
 import type { MDXComponents } from 'mdx/types';
 import { Image, Code, Title } from '@mantine/core';
+import { Demo } from '@mantine/ds';
 import { CodeHighlight } from '@mantine/code-highlight';
 import classes from './mdx-components.module.css';
 
@@ -60,6 +61,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: h(5),
     h6: h(6),
     pre: MdxPre,
+    Demo,
     ...components,
   };
 }

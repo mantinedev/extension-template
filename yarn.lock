@@ -10873,17 +10873,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mantine-extension-template@file:../package::locator=mantine-minimal-next-template%40workspace%3Adocs":
-  version: 0.1.3
-  resolution: "mantine-extension-template@file:../package#../package::hash=ad3a3a&locator=mantine-minimal-next-template%40workspace%3Adocs"
-  peerDependencies:
-    "@mantine/core": ">=7.0.0"
-    "@mantine/hooks": ">=7.0.0"
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  checksum: d30ac5e03ecf72347ac1bd3aee13a20b13d70bfb7636900da79069f021a2cee04dd15fe0d4f2b84a57bcfaa16c9ba8dcc4a7ed2eaafa6956a78ba0824c9447d2
+"mantine-extension-template@link:../package::locator=mantine-minimal-next-template%40workspace%3Adocs":
+  version: 0.0.0-use.local
+  resolution: "mantine-extension-template@link:../package::locator=mantine-minimal-next-template%40workspace%3Adocs"
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "mantine-extension-template@workspace:package":
   version: 0.0.0-use.local
@@ -10913,7 +10907,7 @@ __metadata:
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     eslint: "npm:8.41.0"
-    mantine-extension-template: ../package
+    mantine-extension-template: "link:../package"
     next: "npm:13.4.4"
     postcss: "npm:^8.4.24"
     postcss-preset-mantine: "npm:1.9.0"
