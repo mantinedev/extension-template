@@ -13,7 +13,7 @@ interface PageHeaderProps {
 export function PageHeader({ data }: PageHeaderProps) {
   return (
     <header className={classes.root}>
-      <Container size="md">
+      <Container size="lg">
         <Title className={classes.title}>{data.packageName}</Title>
         <Text className={classes.description}>{data.packageDescription}</Text>
 
