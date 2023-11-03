@@ -1,5 +1,11 @@
 import { InstallScript } from './components/InstallScript/InstallScript';
+import { PropsTablesList } from './components/PropsTable';
+import docgen from './docgen.json';
 
 ## Installation
 
 <InstallScript packages="mantine-extension-template" />
+
+## Props
+
+<PropsTablesList data={docgen} components={['TestComponent']} />
