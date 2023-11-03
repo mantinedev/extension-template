@@ -3,6 +3,10 @@
   font-size: rem(15px);
 }
 
+.link {
+  font-size: rem(15px);
+}
+
 .ul {
   line-height: 1.65;
   margin-bottom: rem(20px);

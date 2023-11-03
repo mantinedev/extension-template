@@ -15,7 +15,6 @@ import {
 import classes from './TestComponent.module.css';
 
 export type TestComponentStylesNames = 'root';
-export type TestComponentVariant = string;
 export type TestComponentCssVariables = {
   root: '--test-component-color';
 };
@@ -36,7 +35,6 @@ export type TestComponentFactory = Factory<{
   ref: HTMLDivElement;
   stylesNames: TestComponentStylesNames;
   vars: TestComponentCssVariables;
-  variant: TestComponentVariant;
 }>;
 
 const defaultProps: Partial<TestComponentProps> = {

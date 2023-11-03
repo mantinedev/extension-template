@@ -4,15 +4,25 @@ import { useRouter } from 'next/router';
 import { PropsTablesList } from '../PropsTable';
 import { TableOfContents } from '../TableOfContents';
 import classes from './DocsTabs.module.css';
+import { StylesApiTablesList } from '../StylesApiTable';
 
 interface DocsTabsProps {
   children: React.ReactNode;
   docgen: any;
+  stylesApiData?: any;
   componentsProps?: string[];
   componentsStyles?: string[];
+  componentPrefix?: string;
 }
 
-export function DocsTabs({ children, docgen, componentsProps, componentsStyles }: DocsTabsProps) {
+export function DocsTabs({
+  children,
+  docgen,
+  componentsProps,
+  componentsStyles,
+  stylesApiData,
+  componentPrefix,
+}: DocsTabsProps) {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState('docs');
   const hasProps = Array.isArray(componentsProps);
@@ -66,7 +76,13 @@ export function DocsTabs({ children, docgen, componentsProps, componentsStyles }
 
       <Tabs.Panel value="styles-api">
         <div className={classes.tabContent} data-secondary>
-          Styles api
+          {stylesApiData && (
+            <StylesApiTablesList
+              data={stylesApiData}
+              components={componentsStyles!}
+              componentPrefix={componentPrefix}
+            />
+          )}
         </div>
       </Tabs.Panel>
     </Tabs>

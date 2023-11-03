@@ -10765,6 +10765,7 @@ __metadata:
     storybook: "npm:^7.5.2"
     storybook-dark-mode: "npm:^3.0.1"
     ts-jest: "npm:^29.1.1"
+    type-fest: "npm:^4.6.0"
     typescript: "npm:^5.2.2"
     version-next: "npm:^1.0.2"
     vite: "npm:^4.5.0"
@@ -15254,6 +15255,13 @@ __metadata:
   version: 3.13.1
   resolution: "type-fest@npm:3.13.1"
   checksum: 547d22186f73a8c04590b70dcf63baff390078c75ea8acd366bbd510fd0646e348bd1970e47ecf795b7cff0b41d26e9c475c1fedd6ef5c45c82075fbf916b629
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "type-fest@npm:4.6.0"
+  checksum: 6f34c3cdb95948821fdfc5a70481791de99b2ba840fad87ac3fbdf77941e556eaeaa03c2ed136b366436560702004af7687d59b03d4f181c28289db1af903179
   languageName: node
   linkType: hard
 
