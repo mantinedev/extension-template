@@ -24,8 +24,8 @@
     "storybook": "storybook dev -p 8271"
   },
   "devDependencies": {
-    "@mantine/core": "^7.1.7",
-    "@mantine/hooks": "^7.1.7",
+    "@mantine/core": "7.2.1",
+    "@mantine/hooks": "7.2.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.4",
