@@ -25,9 +25,9 @@ export function Shell({ children }: ShellProps) {
 
           <HeaderControls
             visibleFrom="sm"
-            onSearch={() => {}}
             githubLink={PACKAGE_DATA.repositoryUrl}
             withDirectionToggle={false}
+            withSearch={false}
           />
 
           <Group hiddenFrom="sm">
