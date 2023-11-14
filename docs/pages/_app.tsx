@@ -5,10 +5,11 @@ import 'mantine-extension-template/styles.css';
 import React from 'react';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
+import { AppProps } from 'next/app';
 import { theme } from '../theme';
 import favicon from '../assets/favicon.svg';
 
-export default function App({ Component, pageProps }: any) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider theme={theme}>
       <Head>

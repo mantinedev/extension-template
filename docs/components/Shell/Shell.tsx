@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'clsx';
-import { AppShell, Container, RemoveScroll, Group } from '@mantine/core';
+import { useHotkeys } from '@mantine/hooks';
+import { AppShell, Container, RemoveScroll, Group, useMantineColorScheme } from '@mantine/core';
 import { ColorSchemeControl, HeaderControls, MantineLogo } from '@mantine/ds';
 import { PACKAGE_DATA } from '../../data';
 import classes from './Shell.module.css';
@@ -10,6 +11,9 @@ interface ShellProps {
 }
 
 export function Shell({ children }: ShellProps) {
+  const { toggleColorScheme } = useMantineColorScheme();
+  useHotkeys([['mod + J', toggleColorScheme]]);
+
   return (
     <AppShell header={{ height: 60 }}>
       <AppShell.Header className={RemoveScroll.classNames.zeroRight}>
