@@ -20,7 +20,7 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --prefer-offline
+        run: yarn
       - name: Build package
         run: npm run build
       - name: Build docs
