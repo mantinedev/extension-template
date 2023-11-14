@@ -21,7 +21,7 @@
     "release:major": "esno scripts/release major && npm run docs:deploy",
     "docgen": "esno scripts/docgen",
     "dev": "cd docs && npm run dev",
-    "docs:build": "cd docs && npm run build",
+    "docs:build": "npm run docgen && cd docs && npm run build",
     "docs:deploy": "npm run docs:build && esno scripts/nojekyll && gh-pages -d docs/out -t true",
     "storybook": "storybook dev -p 8271"
   },
