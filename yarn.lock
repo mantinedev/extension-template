@@ -11937,13 +11937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mantine-extension-template@link:../package::locator=mantine-minimal-next-template%40workspace%3Adocs":
-  version: 0.0.0-use.local
-  resolution: "mantine-extension-template@link:../package::locator=mantine-minimal-next-template%40workspace%3Adocs"
-  languageName: node
-  linkType: soft
-
-"mantine-extension-template@workspace:package":
+"mantine-extension-template@workspace:*, mantine-extension-template@workspace:package":
   version: 0.0.0-use.local
   resolution: "mantine-extension-template@workspace:package"
   peerDependencies:
@@ -11970,7 +11964,7 @@ __metadata:
     "@types/node": "npm:^20.8.9"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    mantine-extension-template: "link:../package"
+    mantine-extension-template: "workspace:*"
     next: "npm:13.4.4"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
