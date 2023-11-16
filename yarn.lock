@@ -11023,7 +11023,7 @@ __metadata:
     identity-obj-proxy: "npm:^3.0.0"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
-    mantine-docgen-script: "npm:^1.1.0"
+    mantine-docgen-script: "npm:^1.2.0"
     new-github-release-url: "npm:^2.0.0"
     open: "npm:^9.1.0"
     postcss: "npm:^8.4.31"
@@ -11141,14 +11141,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mantine-docgen-script@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "mantine-docgen-script@npm:1.1.0"
+"mantine-docgen-script@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "mantine-docgen-script@npm:1.2.0"
   dependencies:
     chalk: "npm:^5"
     fs-extra: "npm:^11"
     react-docgen-typescript: "npm:^2.2.2"
-  checksum: 51324d2f8c0a085cc49836bca9241b21aecc7c9a19c493932a875c40a047f306c496c74b9a927a822bec39ddc8dc412c34cc7021102eb26df370fbcdf162a3b5
+  checksum: cff92f2738bd780a5b4f077133431db113a679fb014aca35cb554b2ddd8b30a1a9292634debc86badeb2a3e6528b73100e8d510d9c383b95a1634a12a1935a81
   languageName: node
   linkType: hard
 
