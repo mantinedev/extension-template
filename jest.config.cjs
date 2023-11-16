@@ -1,7 +1,7 @@
 module.exports = {
   testEnvironment: 'jest-environment-jsdom',
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.tsx?$': 'esbuild-jest',
   },
   testMatch: ['**/?(*.)+(spec|test).ts?(x)'],
   setupFilesAfterEnv: ['./jsdom.mocks.cjs'],
