@@ -1,28 +1,18 @@
 {
   "name": "mantine-extension-template",
-  "description": "A template for Mantine extensions",
-  "packageManager": "yarn@4.0.1",
   "version": "0.1.3",
-  "workspaces": [
-    "docs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rtivital/mantine-extension-template.git"
-  },
-  "keywords": [
-    "mantine",
-    "extension"
-  ],
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rtivital/mantine-extension-template/issues"
-  },
+  "description": "A template for Mantine extensions",
   "homepage": "https://github.com/rtivital/mantine-extension-template#readme",
+  "packageManager": "yarn@4.0.1",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "keywords": [
+    "extension",
+    "mantine"
+  ],
   "main": "./dist/cjs/index.js",
-  "types": "./dist/types/index.d.ts",
   "module": "./dist/esm/index.mjs",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -37,10 +27,15 @@
     "./styles.css": "./dist/styles.css",
     "./styles.layer.css": "./dist/styles.layer.css"
   },
+  "repository": "https://github.com/mantinedev/mantine-extension-template.git",
+  "workspaces": [
+    "docs"
+  ],
   "peerDependencies": {
     "@mantine/core": ">=7.0.0",
     "@mantine/hooks": ">=7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "bugs": "https://github.com/rtivital/mantine-extension-template/issues"
 }

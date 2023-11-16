@@ -13,7 +13,7 @@ let repository;
 
 try {
   const packageJson = fs.readJsonSync('../package/package.json');
-  repository = packageJson.repository.url.split('/').at(-1).replace('.git', '');
+  repository = packageJson.repository.split('/').at(-1).replace('.git', '');
 } catch {
   signale.error('Failed to read repository field of package/package.json\n');
   process.exit(1);
