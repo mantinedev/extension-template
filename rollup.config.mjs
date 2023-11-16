@@ -21,7 +21,7 @@ export default {
     },
     {
       format: 'cjs',
-      entryFileNames: '[name].js',
+      entryFileNames: '[name].cjs',
       dir: path.join(outputDir, 'cjs'),
       preserveModules: true,
       sourcemap: true,
