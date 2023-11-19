@@ -72,3 +72,4 @@ export const TestComponent = factory<TestComponentFactory>((_props, ref) => {
 });
 
 TestComponent.displayName = 'TestComponent';
+TestComponent.classes = classes;
