@@ -1,6 +1,6 @@
 import React from 'react';
 import { Title, Container, Text } from '@mantine/core';
-import { GithubIcon, NpmIcon } from '@mantine/ds';
+import { GithubIcon, NpmIcon } from '@mantinex/dev-icons';
 import { IconLicense, IconUserCode, IconEdit } from '@tabler/icons-react';
 import type { PackageData } from '../../data';
 import { PageHeaderLink } from './PageHeaderLink/PageHeaderLink';

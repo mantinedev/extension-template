@@ -2,7 +2,9 @@ import React from 'react';
 import cx from 'clsx';
 import { useHotkeys } from '@mantine/hooks';
 import { AppShell, Container, RemoveScroll, Group, useMantineColorScheme } from '@mantine/core';
-import { ColorSchemeControl, HeaderControls, MantineLogo } from '@mantine/ds';
+import { MantineLogo } from '@mantinex/mantine-logo';
+import { ColorSchemeControl, HeaderControls } from '@mantinex/mantine-header';
+import { meta } from '@mantinex/mantine-meta';
 import { PACKAGE_DATA } from '../../data';
 import classes from './Shell.module.css';
 
@@ -32,6 +34,7 @@ export function Shell({ children }: ShellProps) {
             githubLink={PACKAGE_DATA.repositoryUrl}
             withDirectionToggle={false}
             withSearch={false}
+            discordLink={meta.discordLink}
           />
 
           <Group hiddenFrom="sm">
