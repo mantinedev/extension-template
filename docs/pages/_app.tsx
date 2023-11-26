@@ -1,15 +1,25 @@
 import '@mantine/core/styles.css';
-import '@mantine/code-highlight/styles.css';
+import '@mantinex/shiki/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import '@mantinex/mantine-header/styles.css';
 import '@mantinex/demo/styles.css';
 import 'mantine-extension-template/styles.css';
 import React from 'react';
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
 import { AppProps } from 'next/app';
+import { MantineProvider } from '@mantine/core';
+import { ShikiProvider } from '@mantinex/shiki';
 import { theme } from '../theme';
 import favicon from '../assets/favicon.svg';
+
+async function loadShiki() {
+  const { getHighlighter } = await import('shikiji');
+  const shiki = await getHighlighter({
+    langs: ['tsx', 'scss', 'html', 'bash', 'json'],
+  });
+
+  return shiki;
+}
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,7 +32,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href={favicon.src} />
       </Head>
-      <Component {...pageProps} />
+      <ShikiProvider loadShiki={loadShiki}>
+        <Component {...pageProps} />
+      </ShikiProvider>
     </MantineProvider>
   );
 }

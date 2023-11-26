@@ -2554,21 +2554,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/code-highlight@npm:7.2.2":
-  version: 7.2.2
-  resolution: "@mantine/code-highlight@npm:7.2.2"
-  dependencies:
-    clsx: "npm:2.0.0"
-    highlight.js: "npm:^11.7.0"
-  peerDependencies:
-    "@mantine/core": 7.2.2
-    "@mantine/hooks": 7.2.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  checksum: ab98547ac1339c4d734976e188e4261909f47576ceb05d70161f1d1220968e8b70c1731185194f2b3465caf430f21b73b38c40a461567baf91dac64a01717a32
-  languageName: node
-  linkType: hard
-
 "@mantine/core@npm:7.2.2":
   version: 7.2.2
   resolution: "@mantine/core@npm:7.2.2"
@@ -2596,34 +2581,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantinex/demo@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@mantinex/demo@npm:1.0.1"
+"@mantinex/demo@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@mantinex/demo@npm:1.1.0"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     "@mantinex/dev-icons": ">=1.0.0"
+    "@mantinex/shiki": ">=1.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 11b18ba7fdd04e1963e7ecbacf0ab99067c9090fad50c8123c1b9daf591f52b0ff15763a23050f80c9be45b137a4d6e1b5100e060abc0be7b97ca19df5b5c957
+    shikiji: ^0.7.4
+  checksum: 22d3d7d759db2cc08664ad2c6af0f03bc1e4407a590cef6a8556ff57c4da4dd32106e060b8c2badb28e2466f375de74f72ef5f1b1b25a065fdb7ce727ab896b3
   languageName: node
   linkType: hard
 
-"@mantinex/dev-icons@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@mantinex/dev-icons@npm:1.0.1"
+"@mantinex/dev-icons@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@mantinex/dev-icons@npm:1.0.2"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 9b658f97616dc6d531d91b47b8093b58f01f67254429826bd56640411fb4404ca3cc3f806c85f2abe87f58f41a24acb5f5c24f6641c8c9424fb2806790ada916
+  checksum: 21c69b832e6215ca79a9ada4bc21558fe197cefb65604c4bbc54bf775c81696ec62a44978d3c5062b78a31f7ceafa1d3f18413aac4d6a12deb761b896c6e88fa
   languageName: node
   linkType: hard
 
-"@mantinex/mantine-header@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@mantinex/mantine-header@npm:1.0.1"
+"@mantinex/mantine-header@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@mantinex/mantine-header@npm:1.0.2"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
@@ -2631,7 +2618,7 @@ __metadata:
     "@tabler/icons-react": ">=2.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 247a1b75d3ae696fa48d1b3f56a4fc024747887ee128bb6b0ad9d44aa460c471b115e5a43dd1d5e0921099957e43b221093c2b4a3a1759110e7713a743b71681
+  checksum: 73f844864a26cbb57aad81a46363506590b2bf271a58946259007376debe54411b5d980ed31d16396201c8e91812639c1a8d7c16c819c23f0ce577b935f67b2c
   languageName: node
   linkType: hard
 
@@ -2656,6 +2643,19 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
   checksum: d25bd8c98f0d911c71a679b3eb9fd7aa5f48900f70d24976d6b323496eee5826405378604fcd5291435656d22d93557f114f4e182967196e23bd564207da71cc
+  languageName: node
+  linkType: hard
+
+"@mantinex/shiki@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mantinex/shiki@npm:1.0.1"
+  peerDependencies:
+    "@mantine/core": ">=7.0.0"
+    "@mantine/hooks": ">=7.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    shikiji: ^0.7.4
+  checksum: e5ada6f9523a0be715bddf1e10e79178d609a8af3a6ac6bbe8d0732a43cfe7159a7585210aa3eb5fc9ca7b1d5dd1fa1503299cdb87d27b005912c635d431e813
   languageName: node
   linkType: hard
 
@@ -9718,6 +9718,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hast-util-from-parse5@npm:^8.0.0":
+  version: 8.0.1
+  resolution: "hast-util-from-parse5@npm:8.0.1"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    "@types/unist": "npm:^3.0.0"
+    devlop: "npm:^1.0.0"
+    hastscript: "npm:^8.0.0"
+    property-information: "npm:^6.0.0"
+    vfile: "npm:^6.0.0"
+    vfile-location: "npm:^5.0.0"
+    web-namespaces: "npm:^2.0.0"
+  checksum: 4a30bb885cff1f0e023c429ae3ece73fe4b03386f07234bf23f5555ca087c2573ff4e551035b417ed7615bde559f394cdaf1db2b91c3b7f0575f3563cd238969
+  languageName: node
+  linkType: hard
+
+"hast-util-parse-selector@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hast-util-parse-selector@npm:4.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+  checksum: 5e98168cb44470dc274aabf1a28317e4feb09b1eaf7a48bbaa8c1de1b43a89cd195cb1284e535698e658e3ec26ad91bc5e52c9563c36feb75abbc68aaf68fb9f
+  languageName: node
+  linkType: hard
+
+"hast-util-raw@npm:^9.0.0":
+  version: 9.0.1
+  resolution: "hast-util-raw@npm:9.0.1"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    "@types/unist": "npm:^3.0.0"
+    "@ungap/structured-clone": "npm:^1.0.0"
+    hast-util-from-parse5: "npm:^8.0.0"
+    hast-util-to-parse5: "npm:^8.0.0"
+    html-void-elements: "npm:^3.0.0"
+    mdast-util-to-hast: "npm:^13.0.0"
+    parse5: "npm:^7.0.0"
+    unist-util-position: "npm:^5.0.0"
+    unist-util-visit: "npm:^5.0.0"
+    vfile: "npm:^6.0.0"
+    web-namespaces: "npm:^2.0.0"
+    zwitch: "npm:^2.0.0"
+  checksum: 60ee6495681f020930380649af58b2a6ca081bec1abd1089f58b0ee892eac2c87dc2077fb30370e51848734b58d2d539e3cde5148c18aa70a89f2c7285e57c91
+  languageName: node
+  linkType: hard
+
 "hast-util-to-estree@npm:^3.0.0":
   version: 3.1.0
   resolution: "hast-util-to-estree@npm:3.1.0"
@@ -9742,6 +9788,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hast-util-to-html@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "hast-util-to-html@npm:9.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    "@types/unist": "npm:^3.0.0"
+    ccount: "npm:^2.0.0"
+    comma-separated-tokens: "npm:^2.0.0"
+    hast-util-raw: "npm:^9.0.0"
+    hast-util-whitespace: "npm:^3.0.0"
+    html-void-elements: "npm:^3.0.0"
+    mdast-util-to-hast: "npm:^13.0.0"
+    property-information: "npm:^6.0.0"
+    space-separated-tokens: "npm:^2.0.0"
+    stringify-entities: "npm:^4.0.0"
+    zwitch: "npm:^2.0.4"
+  checksum: 9fa64c09cfc27653fea814fec38ae579741f498d5db1495f908be15ec898a6c25f43029b2db0fd42eece47a9bdf2a693adb0b4501cd8d24ad858a63dc29e2cdb
+  languageName: node
+  linkType: hard
+
 "hast-util-to-jsx-runtime@npm:^2.0.0":
   version: 2.2.0
   resolution: "hast-util-to-jsx-runtime@npm:2.2.0"
@@ -9759,6 +9825,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hast-util-to-parse5@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "hast-util-to-parse5@npm:8.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    comma-separated-tokens: "npm:^2.0.0"
+    devlop: "npm:^1.0.0"
+    property-information: "npm:^6.0.0"
+    space-separated-tokens: "npm:^2.0.0"
+    web-namespaces: "npm:^2.0.0"
+    zwitch: "npm:^2.0.0"
+  checksum: 3c0c7fba026e0c4be4675daf7277f9ff22ae6da801435f1b7104f7740de5422576f1c025023c7b3df1d0a161e13a04c6ab8f98ada96eb50adb287b537849a2bd
+  languageName: node
+  linkType: hard
+
 "hast-util-whitespace@npm:^3.0.0":
   version: 3.0.0
   resolution: "hast-util-whitespace@npm:3.0.0"
@@ -9768,10 +9849,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"highlight.js@npm:^11.7.0":
-  version: 11.9.0
-  resolution: "highlight.js@npm:11.9.0"
-  checksum: 27cfa8717dc9d200aecbdb383eb122d5f45ce715d2f468583785d36fbfe5076ce033abb02486dc13b407171721cda6f474ed3f3a5a8e8c3d91367fa5f51ee374
+"hastscript@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "hastscript@npm:8.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    comma-separated-tokens: "npm:^2.0.0"
+    hast-util-parse-selector: "npm:^4.0.0"
+    property-information: "npm:^6.0.0"
+    space-separated-tokens: "npm:^2.0.0"
+  checksum: f0b54bbdd710854b71c0f044612db0fe1b5e4d74fa2001633dc8c535c26033269f04f536f9fd5b03f234de1111808f9e230e9d19493bf919432bb24d541719e0
   languageName: node
   linkType: hard
 
@@ -9820,6 +9907,13 @@ __metadata:
   version: 3.3.1
   resolution: "html-tags@npm:3.3.1"
   checksum: 680165e12baa51bad7397452d247dbcc5a5c29dac0e6754b1187eee3bf26f514bc1907a431dd2f7eb56207611ae595ee76a0acc8eaa0d931e72c791dd6463d79
+  languageName: node
+  linkType: hard
+
+"html-void-elements@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "html-void-elements@npm:3.0.0"
+  checksum: a8b9ec5db23b7c8053876dad73a0336183e6162bf6d2677376d8b38d654fdc59ba74fdd12f8812688f7db6fad451210c91b300e472afc0909224e0a44c8610d2
   languageName: node
   linkType: hard
 
@@ -12042,14 +12136,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mantine-minimal-next-template@workspace:docs"
   dependencies:
-    "@mantine/code-highlight": "npm:7.2.2"
     "@mantine/core": "npm:7.2.2"
     "@mantine/hooks": "npm:7.2.2"
-    "@mantinex/demo": "npm:^1.0.1"
-    "@mantinex/dev-icons": "npm:^1.0.1"
-    "@mantinex/mantine-header": "npm:^1.0.1"
+    "@mantinex/demo": "npm:^1.1.0"
+    "@mantinex/dev-icons": "npm:^1.0.2"
+    "@mantinex/mantine-header": "npm:^1.0.2"
     "@mantinex/mantine-logo": "npm:^1.0.1"
     "@mantinex/mantine-meta": "npm:^1.0.1"
+    "@mantinex/shiki": "npm:^1.0.1"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
@@ -12063,6 +12157,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     remark-slug: "npm:^7.0.1"
+    shikiji: "npm:^0.7.4"
     type-fest: "npm:^4.6.0"
     typescript: "npm:5.2.2"
   languageName: unknown
@@ -15842,6 +15937,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"shikiji@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "shikiji@npm:0.7.4"
+  dependencies:
+    hast-util-to-html: "npm:^9.0.0"
+  checksum: 7258156199d3de08b007a6d6aa9fc73d96576455bc5b332b72c34cc918afe79e8bba1334de78ac6d87761ef4ec80870270ae4c4f511717afb4fc8f030efc1c09
+  languageName: node
+  linkType: hard
+
 "side-channel@npm:^1.0.4":
   version: 1.0.4
   resolution: "side-channel@npm:1.0.4"
@@ -17761,6 +17865,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vfile-location@npm:^5.0.0":
+  version: 5.0.2
+  resolution: "vfile-location@npm:5.0.2"
+  dependencies:
+    "@types/unist": "npm:^3.0.0"
+    vfile: "npm:^6.0.0"
+  checksum: cfc7e49de93ac5be6f3c9a9fe77676756e00d33a6c69d9c1ce279b06eedafa67fe5d0da2334b40e97963c43b014501bca2f829dfd6622a3290fb6f7dd2b9339e
+  languageName: node
+  linkType: hard
+
 "vfile-message@npm:^3.0.0":
   version: 3.1.4
   resolution: "vfile-message@npm:3.1.4"
@@ -17878,6 +17992,13 @@ __metadata:
   dependencies:
     defaults: "npm:^1.0.3"
   checksum: 5b61ca583a95e2dd85d7078400190efd452e05751a64accb8c06ce4db65d7e0b0cde9917d705e826a2e05cc2548f61efde115ffa374c3e436d04be45c889e5b4
+  languageName: node
+  linkType: hard
+
+"web-namespaces@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "web-namespaces@npm:2.0.1"
+  checksum: df245f466ad83bd5cd80bfffc1674c7f64b7b84d1de0e4d2c0934fb0782e0a599164e7197a4bce310ee3342fd61817b8047ff04f076a1ce12dd470584142a4bd
   languageName: node
   linkType: hard
 
@@ -18241,7 +18362,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zwitch@npm:^2.0.0":
+"zwitch@npm:^2.0.0, zwitch@npm:^2.0.4":
   version: 2.0.4
   resolution: "zwitch@npm:2.0.4"
   checksum: 3c7830cdd3378667e058ffdb4cf2bb78ac5711214e2725900873accb23f3dfe5f9e7e5a06dcdc5f29605da976fc45c26d9a13ca334d6eea2245a15e77b8fc06e
