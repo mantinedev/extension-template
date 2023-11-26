@@ -2646,16 +2646,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantinex/shiki@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@mantinex/shiki@npm:1.0.1"
+"@mantinex/shiki@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@mantinex/shiki@npm:1.0.2"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
     shikiji: ^0.7.4
-  checksum: e5ada6f9523a0be715bddf1e10e79178d609a8af3a6ac6bbe8d0732a43cfe7159a7585210aa3eb5fc9ca7b1d5dd1fa1503299cdb87d27b005912c635d431e813
+  checksum: 52c8e7b1b8eeb4352bb3d2afbe418cfcebc01e76b9257879b013401efd7030c6467056df1c962dc467a5c4008e4626f2610fe29cd68c6ac5da45d97ab5563767
   languageName: node
   linkType: hard
 
@@ -12143,7 +12143,7 @@ __metadata:
     "@mantinex/mantine-header": "npm:^1.0.2"
     "@mantinex/mantine-logo": "npm:^1.0.1"
     "@mantinex/mantine-meta": "npm:^1.0.1"
-    "@mantinex/shiki": "npm:^1.0.1"
+    "@mantinex/shiki": "npm:^1.0.2"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
