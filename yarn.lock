@@ -12003,7 +12003,7 @@ __metadata:
     new-github-release-url: "npm:^2.0.0"
     open: "npm:^9.1.0"
     postcss: "npm:^8.4.31"
-    postcss-preset-mantine: "npm:^1.9.0"
+    postcss-preset-mantine: "npm:1.11.1"
     prettier: "npm:^3.0.3"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -14405,15 +14405,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-mantine@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "postcss-preset-mantine@npm:1.9.0"
+"postcss-preset-mantine@npm:1.11.1":
+  version: 1.11.1
+  resolution: "postcss-preset-mantine@npm:1.11.1"
   dependencies:
     postcss-mixins: "npm:^9.0.4"
     postcss-nested: "npm:^6.0.1"
   peerDependencies:
     postcss: ">=8.0.0"
-  checksum: 7906f2733835ad6c4a3dd62899850223ff347489d378757874e03527e622ca109c1de8675d9a3c53e5da8a8e0f4063cb4f24f943713dd66d332bb6a2965e1d02
+  checksum: 2ea2e650df0f612cc05fdf344a4eb82a01f30c7a7b474d3c4b0dcfd190a9e3e285ea855730139a8c357c0e8424725aba9fd53d745246242cc170f50bb1e52546
   languageName: node
   linkType: hard
 
