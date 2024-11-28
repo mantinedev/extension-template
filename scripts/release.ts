@@ -1,6 +1,5 @@
 import path from 'node:path';
 import chalk from 'chalk';
-import { execa } from 'execa';
 import fs from 'fs-extra';
 import githubRelease from 'new-github-release-url';
 import open from 'open';
@@ -9,6 +8,7 @@ import SimpleGit from 'simple-git';
 import { getNextVersion, VersionIncrement, VersionStage } from 'version-next';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
+import { $ } from 'zx';
 import { run } from './run';
 import { updateVersion } from './update-version';
 
@@ -57,19 +57,19 @@ async function release() {
     `Current version: ${chalk.cyan(packageJson.version)}, next version: ${chalk.cyan(nextVersion)}`
   );
 
-  await run(execa('yarn'), {
+  await run($`yarn`, {
     info: 'Installing fresh dependencies',
     success: 'Fresh dependencies have been installed',
     error: 'Failed to install fresh dependencies',
   });
 
-  await run(execa('yarn', ['run', 'clean']), {
+  await run($`yarn run clean`, {
     info: 'Removing dist directory',
     success: 'dist directory has been removed',
     error: 'Failed to remove dist directory',
   });
 
-  await run(execa('yarn', ['run', 'build']), {
+  await run($`yarn run build`, {
     info: 'Building the package',
     success: 'The package has been built',
     error: 'Failed to build the package',
@@ -88,9 +88,7 @@ async function release() {
   const revertVersion = await updateVersion(nextVersion);
 
   await run(
-    execa('npm', ['publish', '--access', 'public', '--tag', versionStage ? 'next' : 'latest'], {
-      cwd: path.join(process.cwd(), 'package'),
-    }),
+    $`cd ./package && npm publish --access public --tag ${versionStage ? 'next' : 'latest'}`,
     {
       info: 'Publishing the package to npm',
       success: 'The package has been published to npm',
