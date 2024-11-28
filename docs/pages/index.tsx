@@ -1,11 +1,11 @@
 import React from 'react';
-import { Shell } from '../components/Shell';
-import { PageHeader } from '../components/PageHeader';
 import { DocsTabs } from '../components/DocsTabs';
+import { PageHeader } from '../components/PageHeader';
+import { Shell } from '../components/Shell';
 import { PACKAGE_DATA } from '../data';
-import { STYLES_API_DATA } from '../styles-api';
 import docgen from '../docgen.json';
 import Docs from '../docs.mdx';
+import { STYLES_API_DATA } from '../styles-api';
 
 export default function HomePage() {
   return (
