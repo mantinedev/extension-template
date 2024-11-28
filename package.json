@@ -7,6 +7,10 @@
     "docs",
     "package"
   ],
+  "repository": {
+    "url": "https://github.com/mantinedev/extension-template.git",
+    "type": "git"
+  },
   "scripts": {
     "clean": "rimraf package/dist",
     "build": "rollup -c rollup.config.mjs && tsx scripts/generate-dts && tsx scripts/prepare-css",

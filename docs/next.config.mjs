@@ -14,6 +14,7 @@ let repository;
 try {
   const packageJson = fs.readJsonSync('../package/package.json');
   repository = packageJson.repository.split('/').at(-1).replace('.git', '');
+  signale.info(`gh-pages repository: ${repository}\n`);
 } catch {
   signale.error('Failed to read repository field of package/package.json\n');
   process.exit(1);

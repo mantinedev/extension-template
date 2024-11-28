@@ -27,7 +27,7 @@
     "./styles.css": "./dist/styles.css",
     "./styles.layer.css": "./dist/styles.layer.css"
   },
-  "repository": "https://github.com/mantinedev/mantine-extension-template.git",
+  "repository": "https://github.com/mantinedev/extension-template.git",
   "workspaces": [
     "docs"
   ],
@@ -37,5 +37,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "bugs": "https://github.com/rtivital/mantine-extension-template/issues"
+  "bugs": "https://github.com/rtivital/extension-template/issues"
 }
