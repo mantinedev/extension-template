@@ -33,3 +33,7 @@ By default, the documentation is deployed to GitHub Pages. The script to deploy 
 this script to work correctly, you need to make sure that `repository` field in [package/package.json](https://github.com/mantinedev/extension-template/blob/master/package/package.json) points to your repository.
 
 To publish documentation manually, run `npm run docs:deploy`.
+
+## README file of your extension
+
+`README.md` file at the root repository directory (file that you are currently reading) is copied to to `package/README.md` during the build process to avoid duplication. To add content to the README file of your extension, remove extension template documentation from this file and add your own content.
