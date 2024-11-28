@@ -1,14 +1,14 @@
 import path from 'node:path';
 import chalk from 'chalk';
-import fs from 'fs-extra';
-import yargs from 'yargs';
-import open from 'open';
-import githubRelease from 'new-github-release-url';
-import SimpleGit from 'simple-git';
-import { hideBin } from 'yargs/helpers';
 import { execa } from 'execa';
+import fs from 'fs-extra';
+import githubRelease from 'new-github-release-url';
+import open from 'open';
 import signale from 'signale';
-import { getNextVersion, VersionStage, VersionIncrement } from 'version-next';
+import SimpleGit from 'simple-git';
+import { getNextVersion, VersionIncrement, VersionStage } from 'version-next';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 import { run } from './run';
 import { updateVersion } from './update-version';
 
@@ -88,11 +88,9 @@ async function release() {
   const revertVersion = await updateVersion(nextVersion);
 
   await run(
-    execa(
-      'yarn',
-      ['npm', 'publish', '--access', 'public', '--tag', versionStage ? 'next' : 'latest'],
-      { cwd: path.join(process.cwd(), 'package') }
-    ),
+    execa('npm', ['publish', '--access', 'public', '--tag', versionStage ? 'next' : 'latest'], {
+      cwd: path.join(process.cwd(), 'package'),
+    }),
     {
       info: 'Publishing the package to npm',
       success: 'The package has been published to npm',

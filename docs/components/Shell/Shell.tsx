@@ -1,9 +1,9 @@
 import React from 'react';
 import cx from 'clsx';
+import { AppShell, Container, Group, RemoveScroll, useMantineColorScheme } from '@mantine/core';
 import { useHotkeys } from '@mantine/hooks';
-import { AppShell, Container, RemoveScroll, Group, useMantineColorScheme } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
 import { ColorSchemeControl, HeaderControls } from '@mantinex/mantine-header';
+import { MantineLogo } from '@mantinex/mantine-logo';
 import { meta } from '@mantinex/mantine-meta';
 import { PACKAGE_DATA } from '../../data';
 import classes from './Shell.module.css';
