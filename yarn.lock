@@ -6333,6 +6333,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"extension-template-docs@workspace:docs":
+  version: 0.0.0-use.local
+  resolution: "extension-template-docs@workspace:docs"
+  dependencies:
+    "@mantine/core": "npm:7.14.2"
+    "@mantine/hooks": "npm:7.14.2"
+    "@mantinex/demo": "npm:^1.1.1"
+    "@mantinex/dev-icons": "npm:^1.0.2"
+    "@mantinex/mantine-header": "npm:^1.0.2"
+    "@mantinex/mantine-logo": "npm:^1.0.1"
+    "@mantinex/mantine-meta": "npm:^1.0.2"
+    "@mantinex/shiki": "npm:^1.0.3"
+    "@mdx-js/loader": "npm:^3.1.0"
+    "@mdx-js/react": "npm:^3.1.0"
+    "@next/mdx": "npm:^15.0.3"
+    "@tabler/icons-react": "npm:^3.22.0"
+    "@types/mdx": "npm:^2.0.13"
+    "@types/node": "npm:^22.10.1"
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
+    mantine-extension-template: "workspace:*"
+    next: "npm:15.0.3"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    remark-slug: "npm:^7.0.1"
+    shikiji: "npm:^0.10.2"
+    type-fest: "npm:^4.29.0"
+    typescript: "npm:5.7.2"
+  languageName: unknown
+  linkType: soft
+
 "extglob@npm:^2.0.4":
   version: 2.0.4
   resolution: "extglob@npm:2.0.4"
@@ -9434,37 +9465,6 @@ __metadata:
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  languageName: unknown
-  linkType: soft
-
-"mantine-minimal-next-template@workspace:docs":
-  version: 0.0.0-use.local
-  resolution: "mantine-minimal-next-template@workspace:docs"
-  dependencies:
-    "@mantine/core": "npm:7.14.2"
-    "@mantine/hooks": "npm:7.14.2"
-    "@mantinex/demo": "npm:^1.1.1"
-    "@mantinex/dev-icons": "npm:^1.0.2"
-    "@mantinex/mantine-header": "npm:^1.0.2"
-    "@mantinex/mantine-logo": "npm:^1.0.1"
-    "@mantinex/mantine-meta": "npm:^1.0.2"
-    "@mantinex/shiki": "npm:^1.0.3"
-    "@mdx-js/loader": "npm:^3.1.0"
-    "@mdx-js/react": "npm:^3.1.0"
-    "@next/mdx": "npm:^15.0.3"
-    "@tabler/icons-react": "npm:^3.22.0"
-    "@types/mdx": "npm:^2.0.13"
-    "@types/node": "npm:^22.10.1"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    mantine-extension-template: "workspace:*"
-    next: "npm:15.0.3"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    remark-slug: "npm:^7.0.1"
-    shikiji: "npm:^0.10.2"
-    type-fest: "npm:^4.29.0"
-    typescript: "npm:5.7.2"
   languageName: unknown
   linkType: soft
 

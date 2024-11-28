@@ -103,7 +103,7 @@ async function release() {
 
   open(
     githubRelease({
-      ...getRepositoryInfo(packageJson.repository.url),
+      ...getRepositoryInfo(packageJson.repository.url || packageJson.repository),
       tag: nextVersion,
       title: nextVersion,
     })
