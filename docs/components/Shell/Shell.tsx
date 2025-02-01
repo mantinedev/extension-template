@@ -18,7 +18,7 @@ export function Shell({ children }: ShellProps) {
 
   return (
     <AppShell header={{ height: 60 }}>
-      <AppShell.Header className={RemoveScroll.classNames.zeroRight}>
+      <AppShell.Header className={cx(RemoveScroll.classNames.zeroRight, classes.header)}>
         <Container size="lg" px="md" className={classes.inner}>
           <a
             href="https://mantine.dev/"
@@ -34,6 +34,7 @@ export function Shell({ children }: ShellProps) {
             githubLink={PACKAGE_DATA.repositoryUrl}
             withDirectionToggle={false}
             withSearch={false}
+            withSupport={false}
             discordLink={meta.discordLink}
           />
 
