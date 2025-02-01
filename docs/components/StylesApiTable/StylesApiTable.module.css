@@ -6,16 +6,8 @@
     border-radius: var(--mantine-radius-sm);
     font-size: var(--mantine-font-size-xs);
     margin: 0;
-
-    @mixin light {
-      background-color: var(--mantine-color-gray-1);
-      color: var(--mantine-color-black);
-    }
-
-    @mixin dark {
-      background-color: var(--mantine-color-dark-5);
-      color: var(--mantine-color-white);
-    }
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+    color: var(--mantine-color-bright);
   }
 }
 
@@ -24,11 +16,9 @@
 }
 
 .group {
-  --_group-spacing: 40px;
-
   & + & {
-    margin-top: var(--_group-spacing);
-    padding-top: var(--_group-spacing);
+    margin-top: 40px;
+    padding-top: 40px;
     border-top: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-3));
   }
 }
@@ -36,14 +26,7 @@
 .title {
   margin-bottom: var(--mantine-spacing-sm);
   font-weight: 500;
-
-  @mixin light {
-    color: var(--mantine-color-black);
-  }
-
-  @mixin dark {
-    color: var(--mantine-color-white);
-  }
+  color: var(--mantine-color-bright);
 }
 
 .section {
