@@ -11,29 +11,29 @@
   "dependencies": {
     "@mantine/core": "7.16.2",
     "@mantine/hooks": "7.16.2",
-    "@mantinex/demo": "^1.1.1",
-    "@mantinex/dev-icons": "^1.0.2",
-    "@mantinex/mantine-header": "^1.0.2",
-    "@mantinex/mantine-logo": "^1.0.1",
+    "@mantinex/demo": "^1.2.0",
+    "@mantinex/dev-icons": "^1.1.0",
+    "@mantinex/mantine-header": "^1.1.0",
+    "@mantinex/mantine-logo": "^1.1.0",
     "@mantinex/mantine-meta": "^1.0.2",
-    "@mantinex/shiki": "^1.0.3",
+    "@mantinex/shiki": "^1.1.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
-    "@next/mdx": "^15.0.3",
-    "@tabler/icons-react": "^3.22.0",
+    "@next/mdx": "^15.1.6",
+    "@tabler/icons-react": "^3.29.0",
     "@types/mdx": "^2.0.13",
     "mantine-extension-template": "workspace:*",
-    "next": "15.0.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "remark-slug": "^7.0.1",
     "shikiji": "^0.10.2",
-    "type-fest": "^4.29.0"
+    "type-fest": "^4.33.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.1",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "5.7.2"
+    "@types/node": "^22.13.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "5.7.3"
   }
 }

@@ -28,14 +28,11 @@
     "./styles.layer.css": "./dist/styles.layer.css"
   },
   "repository": "https://github.com/mantinedev/extension-template.git",
-  "workspaces": [
-    "docs"
-  ],
   "peerDependencies": {
     "@mantine/core": ">=7.0.0",
     "@mantine/hooks": ">=7.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.x || ^19.x",
+    "react-dom": "^18.x || ^19.x"
   },
   "bugs": "https://github.com/rtivital/extension-template/issues"
 }
