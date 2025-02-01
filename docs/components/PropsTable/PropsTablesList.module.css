@@ -34,6 +34,7 @@
 
 .title {
   margin-bottom: var(--mantine-spacing-lg);
+  font-weight: 500;
 
   @mixin light {
     color: var(--mantine-color-black);
