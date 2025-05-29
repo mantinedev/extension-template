@@ -6634,7 +6634,6 @@ __metadata:
     react-dom: "npm:19.1.0"
     remark-slug: "npm:^7.0.1"
     shiki: "npm:^3.4.2"
-    shikiji: "npm:^0.10.2"
     type-fest: "npm:^4.41.0"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -13470,22 +13469,6 @@ __metadata:
     "@shikijs/vscode-textmate": "npm:^10.0.2"
     "@types/hast": "npm:^3.0.4"
   checksum: 10c0/3cae825d8c341d7334e541efad30125fac0064db6004359e661a594782d59f93f66f2dcb5dbc1d8cb6508c43ccdd03ed6cf1d22306b382bc1f395a6130e5cbbb
-  languageName: node
-  linkType: hard
-
-"shikiji-core@npm:0.10.2":
-  version: 0.10.2
-  resolution: "shikiji-core@npm:0.10.2"
-  checksum: 10c0/8855fbb59293ad95718e1b15cb88c716e2a55afe30a6096ec267db938afbd423469dd4448a5466dca8cee4a34cfa6a61adf4c82fded6febd5c8fe33cbeeceef5
-  languageName: node
-  linkType: hard
-
-"shikiji@npm:^0.10.2":
-  version: 0.10.2
-  resolution: "shikiji@npm:0.10.2"
-  dependencies:
-    shikiji-core: "npm:0.10.2"
-  checksum: 10c0/f94a9649a9a704b92497cbf83eddd345e975295862a1ccbaef2faa694482ec32e82eb8c3a60d7085b77034051f6dc233073ea6a04ab5b643d235cdd3ed0383ea
   languageName: node
   linkType: hard
 
