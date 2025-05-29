@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-import '@mantinex/shiki/styles.css';
+import '@mantine/code-highlight/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import '@mantinex/mantine-header/styles.css';
 import '@mantinex/demo/styles.css';
@@ -8,19 +8,22 @@ import 'mantine-extension-template/styles.css';
 import React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { CodeHighlightAdapterProvider, createShikiAdapter } from '@mantine/code-highlight';
 import { MantineProvider } from '@mantine/core';
-import { ShikiProvider } from '@mantinex/shiki';
 import favicon from '../assets/favicon.svg';
 import { theme } from '../theme';
 
 async function loadShiki() {
-  const { getHighlighter } = await import('shikiji');
-  const shiki = await getHighlighter({
+  const { createHighlighter } = await import('shiki');
+  const shiki = await createHighlighter({
     langs: ['tsx', 'scss', 'html', 'bash', 'json'],
+    themes: [],
   });
 
   return shiki;
 }
+
+const shikiAdapter = createShikiAdapter(loadShiki);
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -33,9 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href={favicon.src} />
       </Head>
-      <ShikiProvider loadShiki={loadShiki}>
+      <CodeHighlightAdapterProvider adapter={shikiAdapter}>
         <Component {...pageProps} />
-      </ShikiProvider>
+      </CodeHighlightAdapterProvider>
     </MantineProvider>
   );
 }

@@ -77,7 +77,6 @@
   &[data-main] {
     flex-direction: row;
     align-items: flex-start;
-    max-width: calc(100% - 280px);
 
     @mixin smaller-than $mantine-breakpoint-md {
       max-width: 100%;
