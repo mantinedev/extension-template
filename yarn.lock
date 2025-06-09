@@ -1869,24 +1869,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/code-highlight@npm:8.0.2":
-  version: 8.0.2
-  resolution: "@mantine/code-highlight@npm:8.0.2"
+"@mantine/code-highlight@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@mantine/code-highlight@npm:8.1.0"
   dependencies:
     clsx: "npm:^2.1.1"
     highlight.js: "npm:^11.10.0"
   peerDependencies:
-    "@mantine/core": 8.0.2
-    "@mantine/hooks": 8.0.2
+    "@mantine/core": 8.1.0
+    "@mantine/hooks": 8.1.0
     react: ^18.x || ^19.x
     react-dom: ^18.x || ^19.x
-  checksum: 10c0/c82a8f7e3540c4bb91e477da1df6aa639ea8839ec7ee3a5e8208a0626118cdfa81ce8d0d2a4b1639a3118396ea809a939afed0ad4347c22eec14263361600175
+  checksum: 10c0/6613afb1cbe850eeeb7042f88be439d1d30b917fb601a4bba04b69629d5807c2efea0d3ab963f9aaf6771fd3b806629c257c24a40d61c5948ae0f3884a713d9f
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:8.0.2":
-  version: 8.0.2
-  resolution: "@mantine/core@npm:8.0.2"
+"@mantine/core@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@mantine/core@npm:8.1.0"
   dependencies:
     "@floating-ui/react": "npm:^0.26.28"
     clsx: "npm:^2.1.1"
@@ -1895,19 +1895,19 @@ __metadata:
     react-textarea-autosize: "npm:8.5.9"
     type-fest: "npm:^4.27.0"
   peerDependencies:
-    "@mantine/hooks": 8.0.2
+    "@mantine/hooks": 8.1.0
     react: ^18.x || ^19.x
     react-dom: ^18.x || ^19.x
-  checksum: 10c0/10ca6258bcc4e475fbb213724ad6e654396434d7345a315c60880c7fc639ffaa5b42b85d3e768364fcb869042357a52cfd6532dfc6daf1b5ba5370a9ca15936d
+  checksum: 10c0/55c0b1b3d5d2e2543a1bf98cc12d45f2b64772f224ac58d56c0ebf3c14b633dd60dfe2a0a90e8765c76fb69e7ee41cab98da3a7920102d79d4904cdf9b690e3a
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:8.0.2":
-  version: 8.0.2
-  resolution: "@mantine/hooks@npm:8.0.2"
+"@mantine/hooks@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@mantine/hooks@npm:8.1.0"
   peerDependencies:
     react: ^18.x || ^19.x
-  checksum: 10c0/1c68325ee0093923c7bbbde7f1b39600ae72751f254bd336989afe50d08a9c14810465ddfdb62e261e83711d334c292d6ac789a546a8df0e14a2f4f51812efda
+  checksum: 10c0/65c0f7c04b5019aafe5a924971b8706ecb1e73df786c5368ab59cd78f9258778bfd3bb880d7288d10e6ac2ecdef273bfbc8ce7ff080dfd4644be829321967fe2
   languageName: node
   linkType: hard
 
@@ -6612,9 +6612,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "extension-template-docs@workspace:docs"
   dependencies:
-    "@mantine/code-highlight": "npm:8.0.2"
-    "@mantine/core": "npm:8.0.2"
-    "@mantine/hooks": "npm:8.0.2"
+    "@mantine/code-highlight": "npm:8.1.0"
+    "@mantine/core": "npm:8.1.0"
+    "@mantine/hooks": "npm:8.1.0"
     "@mantinex/demo": "npm:^2.0.0"
     "@mantinex/dev-icons": "npm:^2.0.0"
     "@mantinex/mantine-header": "npm:^2.0.0"
@@ -9850,8 +9850,8 @@ __metadata:
     "@eslint/js": "npm:^9.27.0"
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.4.2"
     "@mantine-tests/core": "npm:^2.0.0"
-    "@mantine/core": "npm:8.0.2"
-    "@mantine/hooks": "npm:8.0.2"
+    "@mantine/core": "npm:8.1.0"
+    "@mantine/hooks": "npm:8.1.0"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     "@rollup/plugin-replace": "npm:^6.0.2"
     "@storybook/addon-essentials": "npm:^8.6.14"
