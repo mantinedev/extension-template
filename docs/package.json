@@ -9,9 +9,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mantine/code-highlight": "8.2.3",
-    "@mantine/core": "8.2.3",
-    "@mantine/hooks": "8.2.3",
+    "@mantine/code-highlight": "8.2.4",
+    "@mantine/core": "8.2.4",
+    "@mantine/hooks": "8.2.4",
     "@mantinex/demo": "^2.0.0",
     "@mantinex/dev-icons": "^2.0.0",
     "@mantinex/mantine-header": "^2.0.0",
