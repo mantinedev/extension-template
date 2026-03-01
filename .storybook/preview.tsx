@@ -3,28 +3,8 @@ import type { Preview } from '@storybook/react';
 import '@mantine/core/styles.css';
 
 import React, { useEffect } from 'react';
-import { addons } from '@storybook/preview-api';
-import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
-import { MantineProvider, useMantineColorScheme } from '@mantine/core';
-
-const channel = addons.getChannel();
-
-function ColorSchemeWrapper({ children }: { children: React.ReactNode }) {
-  const { setColorScheme } = useMantineColorScheme();
-  const handleColorScheme = (value: boolean) => setColorScheme(value ? 'dark' : 'light');
-
-  useEffect(() => {
-    channel.on(DARK_MODE_EVENT_NAME, handleColorScheme);
-    return () => channel.off(DARK_MODE_EVENT_NAME, handleColorScheme);
-  }, [channel]);
-
-  return <>{children}</>;
-}
-
-export const decorators = [
-  (renderStory: any) => <ColorSchemeWrapper>{renderStory()}</ColorSchemeWrapper>,
-  (renderStory: any) => <MantineProvider>{renderStory()}</MantineProvider>,
-];
+import { useGlobals } from 'storybook/preview-api';
+import { MantineProvider } from '@mantine/core';
 
 const preview: Preview = {
   parameters: {
@@ -36,6 +16,46 @@ const preview: Preview = {
       },
     },
   },
+  globalTypes: {
+    theme: {
+      name: 'Theme',
+      description: 'Mantine color scheme',
+      defaultValue: 'light',
+      toolbar: {
+        icon: 'mirror',
+        items: [
+          { value: 'light', title: 'Light' },
+          { value: 'dark', title: 'Dark' },
+        ],
+      },
+    },
+  },
+  decorators: [
+    (renderStory: any, context: any) => {
+      const [{ theme }, updateGlobals] = useGlobals();
+
+      useEffect(() => {
+        const onKeyDown = (event: KeyboardEvent) => {
+          const isMod = event.metaKey || event.ctrlKey;
+          const isJ = event.code === 'KeyJ';
+
+          if (!isMod || !isJ) {
+            return;
+          }
+
+          event.preventDefault();
+          updateGlobals({ theme: theme === 'dark' ? 'light' : 'dark' });
+        };
+
+        window.addEventListener('keydown', onKeyDown);
+        return () => window.removeEventListener('keydown', onKeyDown);
+      }, [theme, updateGlobals]);
+
+      const scheme = (context.globals.theme || 'light') as 'light' | 'dark';
+
+      return <MantineProvider forceColorScheme={scheme}>{renderStory()}</MantineProvider>;
+    },
+  ],
 };
 
 export default preview;
