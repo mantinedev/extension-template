@@ -20,9 +20,7 @@ export type TestComponentCssVariables = {
 };
 
 export interface TestComponentProps
-  extends BoxProps,
-    StylesApiProps<TestComponentFactory>,
-    ElementProps<'div'> {
+  extends BoxProps, StylesApiProps<TestComponentFactory>, ElementProps<'div'> {
   /** Label displayed inside the component, `'Test component'` by default */
   label?: React.ReactNode;
 
