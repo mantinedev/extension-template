@@ -36,8 +36,8 @@
   "devDependencies": {
     "@eslint/js": "^9.27.0",
     "@mantine-tests/core": "^2.0.0",
-    "@mantine/core": "8.3.16",
-    "@mantine/hooks": "8.3.16",
+    "@mantine/core": "9.0.0",
+    "@mantine/hooks": "9.0.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-replace": "^6.0.2",
     "@storybook/addon-essentials": "^8.6.14",
