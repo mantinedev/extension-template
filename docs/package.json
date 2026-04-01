@@ -9,9 +9,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mantine/code-highlight": "8.3.15",
-    "@mantine/core": "8.3.15",
-    "@mantine/hooks": "8.3.15",
+    "@mantine/code-highlight": "9.0.0",
+    "@mantine/core": "9.0.0",
+    "@mantine/hooks": "9.0.0",
     "@mantinex/demo": "^2.0.0",
     "@mantinex/dev-icons": "^2.0.0",
     "@mantinex/mantine-header": "^2.0.0",
@@ -34,6 +34,6 @@
     "@types/node": "^22.15.24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "5.8.3"
+    "typescript": "6.0.2"
   }
 }
