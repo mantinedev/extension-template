@@ -4,8 +4,8 @@ import {
   BoxProps,
   createVarsResolver,
   ElementProps,
-  factory,
-  Factory,
+  polymorphicFactory,
+  PolymorphicFactory,
   getThemeColor,
   MantineColor,
   StylesApiProps,
@@ -28,9 +28,10 @@ export interface TestComponentProps
   color?: MantineColor;
 }
 
-export type TestComponentFactory = Factory<{
+export type TestComponentFactory = PolymorphicFactory<{
   props: TestComponentProps;
-  ref: HTMLDivElement;
+  defaultComponent: 'div';
+  defaultRef: HTMLDivElement;
   stylesNames: TestComponentStylesNames;
   vars: TestComponentCssVariables;
 }>;
@@ -45,7 +46,7 @@ const varsResolver = createVarsResolver<TestComponentFactory>((theme, { color })
   },
 }));
 
-export const TestComponent = factory<TestComponentFactory>((_props, ref) => {
+export const TestComponent = polymorphicFactory<TestComponentFactory>((_props) => {
   const props = useProps('TestComponent', defaultProps, _props);
   const { classNames, className, style, styles, unstyled, vars, label, ...others } = props;
 
@@ -63,7 +64,7 @@ export const TestComponent = factory<TestComponentFactory>((_props, ref) => {
   });
 
   return (
-    <Box ref={ref} {...getStyles('root')} {...others}>
+    <Box {...getStyles('root')} {...others}>
       {label}
     </Box>
   );
