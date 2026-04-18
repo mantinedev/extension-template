@@ -1,4 +1,3 @@
-import path from 'node:path';
 import chalk from 'chalk';
 import fs from 'fs-extra';
 import githubRelease from 'new-github-release-url';
@@ -11,6 +10,7 @@ import { hideBin } from 'yargs/helpers';
 import { $ } from 'zx';
 import { run } from './run';
 import { updateVersion } from './update-version';
+import path from 'node:path';
 
 const packageJsonPath = path.join(process.cwd(), 'package/package.json');
 const packageJson = fs.readJsonSync(packageJsonPath);
