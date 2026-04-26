@@ -4,12 +4,11 @@ import '@mantinex/mantine-logo/styles.css';
 import '@mantinex/mantine-header/styles.css';
 import '@mantinex/demo/styles.css';
 import 'mantine-extension-template/styles.css';
-
-import React from 'react';
-import { AppProps } from 'next/app';
-import Head from 'next/head';
 import { CodeHighlightAdapterProvider, createShikiAdapter } from '@mantine/code-highlight';
 import { MantineProvider } from '@mantine/core';
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import React from 'react';
 import favicon from '../assets/favicon.svg';
 import { theme } from '../theme';
 
