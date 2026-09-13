@@ -1668,23 +1668,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/code-highlight@npm:9.6.0":
-  version: 9.6.0
-  resolution: "@mantine/code-highlight@npm:9.6.0"
+"@mantine/code-highlight@npm:9.6.1":
+  version: 9.6.1
+  resolution: "@mantine/code-highlight@npm:9.6.1"
   dependencies:
     clsx: "npm:^2.1.1"
   peerDependencies:
-    "@mantine/core": 9.6.0
-    "@mantine/hooks": 9.6.0
+    "@mantine/core": 9.6.1
+    "@mantine/hooks": 9.6.1
     react: ^19.2.0
     react-dom: ^19.2.0
-  checksum: 10c0/d50d452b6bd2f1aa1fadc1ad8891eab4765390e7cdbf5d2b5c36fa57cb2d636f61a4bac21426da648b16f28f769de7ecca700574c1afcef112b7045245f31093
+  checksum: 10c0/32e238d71b4e370782b9d0b0ae1a148848dfb946d33e83d12cef44556668c53ee7c98763aea1ce577820f97f1018ccd24d49a2f2b855d52d4d1c8c30ebf4e9f3
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:9.6.0":
-  version: 9.6.0
-  resolution: "@mantine/core@npm:9.6.0"
+"@mantine/core@npm:9.6.1":
+  version: 9.6.1
+  resolution: "@mantine/core@npm:9.6.1"
   dependencies:
     "@floating-ui/react": "npm:^0.27.20"
     clsx: "npm:^2.1.1"
@@ -1692,19 +1692,19 @@ __metadata:
     react-remove-scroll: "npm:^2.7.2"
     type-fest: "npm:^5.8.0"
   peerDependencies:
-    "@mantine/hooks": 9.6.0
+    "@mantine/hooks": 9.6.1
     react: ^19.2.0
     react-dom: ^19.2.0
-  checksum: 10c0/6110bcef59481ec544a025e37744dc7fbba6fa69e32ce1d3714186cf31b301ff00113a44925e86f9183ac880fb723a787632de5a4ed357d93850306a3ec630a9
+  checksum: 10c0/2891407a293cf5415ae3b9a5025dfce193e7051ab40c839e98f0b26c1b21c133b7bde250c441b9eca40e64691e4999d853825e12afb8ad35657597f2134f8efb
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:9.6.0":
-  version: 9.6.0
-  resolution: "@mantine/hooks@npm:9.6.0"
+"@mantine/hooks@npm:9.6.1":
+  version: 9.6.1
+  resolution: "@mantine/hooks@npm:9.6.1"
   peerDependencies:
     react: ^19.2.0
-  checksum: 10c0/ac63a53b09da2012716a2c24d98727e39e8ae932b0c1fcbf6d5161c721d6f314519d1a1e600868c481fea11b4171b68541bc8dda12a96dfe8f6e57ac074b38e9
+  checksum: 10c0/74a2fa03d95fa825bd98afe4643372907619074599948c617b9bec018ad8a92523db77708a922f928e2a1326f2150bedd19f59011b56ec3c8d1d0631cb5c1b51
   languageName: node
   linkType: hard
 
@@ -5677,9 +5677,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "extension-template-docs@workspace:docs"
   dependencies:
-    "@mantine/code-highlight": "npm:9.6.0"
-    "@mantine/core": "npm:9.6.0"
-    "@mantine/hooks": "npm:9.6.0"
+    "@mantine/code-highlight": "npm:9.6.1"
+    "@mantine/core": "npm:9.6.1"
+    "@mantine/hooks": "npm:9.6.1"
     "@mantinex/demo": "npm:^2.0.0"
     "@mantinex/dev-icons": "npm:^2.0.0"
     "@mantinex/mantine-header": "npm:^2.0.0"
@@ -8282,8 +8282,8 @@ __metadata:
   resolution: "m-90d2bb8@workspace:."
   dependencies:
     "@mantine-tests/core": "npm:^2.0.0"
-    "@mantine/core": "npm:9.6.0"
-    "@mantine/hooks": "npm:9.6.0"
+    "@mantine/core": "npm:9.6.1"
+    "@mantine/hooks": "npm:9.6.1"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     "@rollup/plugin-replace": "npm:^6.0.2"
     "@storybook/addon-essentials": "npm:^8.6.14"
